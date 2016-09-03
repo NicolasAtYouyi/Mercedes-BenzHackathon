@@ -12,6 +12,8 @@
 #import "BGQuestionListViewController.h"
 #import "BGConstant.h"
 #import "BGShopListViewController.h"
+#import "BaseController.h"
+#import "MineViewController.h"
 
 @interface BGTabViewController ()
 
@@ -64,6 +66,13 @@
 - (void) setupViewControllers{
     
     
+    UIStoryboard *s = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    BaseController *home = [s instantiateViewControllerWithIdentifier:@"BaseController"];
+    [home initTabBar];
+    
+    MineViewController *mine = [s instantiateViewControllerWithIdentifier:@"MineViewController"];
+    [mine initTabBar];
+    
     BGShopListViewController *shopList = [[BGShopListViewController alloc] initWithNibName:@"BGShopListViewController" bundle:nil];
     [shopList initTabBar];
     
@@ -82,7 +91,7 @@
     forum.arrMenuItems = arrMenuItems;
     forum.viewControllerArray = vcs;
     
-    self.viewControllers = @[shopList,forum];
+    self.viewControllers = @[home,shopList,forum,mine];
 }
 
 @end

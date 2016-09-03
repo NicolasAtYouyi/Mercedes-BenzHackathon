@@ -15,7 +15,87 @@
 
 
 
-#define test  @"test"
+#define iPhone4 CGSizeEqualToSize(CGSizeMake(320, 480), [UIScreen mainScreen].bounds.size)
+#define iPhone5 CGSizeEqualToSize(CGSizeMake(320, 568), [UIScreen mainScreen].bounds.size)
+#define iPhone6 CGSizeEqualToSize(CGSizeMake(375, 667), [UIScreen mainScreen].bounds.size)
+#define iPhone6p CGSizeEqualToSize(CGSizeMake(414, 736), [UIScreen mainScreen].bounds.size)
+
+#define RandomColor [UIColor colorWithRed:random() % 256 / 255. green:random() % 256 / 255. blue:random() % 256 / 255. alpha:1.]
+#define TestColor [UIColor redColor]
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define BoxMaxCount 99
+#define tabbarNum 5
+
+
+#define FontTypeThin @"FZLanTingHei-L-GBK"
+#define FontTypeFat @"FZLanTingHei-R-GBK"
+#define Icomoon @"icomoon"
+#define Georgia @"Georgia"
+#define ReLogin @"ReLogin"
+
+#define MenuHeight 20
+#define NaviHeight (20 + 44)
+#define StatusBarHeight 20
+#define TabHeight 49
+#define IconButtonWidth 40
+
+#define CellHeight (88 / 2)
+#define ViewHeight (64 / 2)
+#define itemWidthMargin 120
+
+
+#define TitleSize (34 / 2)
+#define CommonSize (28 / 2)
+#define MedToSmallSize (26 / 2)
+#define SmallSize (24 / 2)
+#define VerySmallSize (20 / 2)
+#define BigSize (32 / 2)
+#define VeryBigSize (48 / 2)
+#define LargeSize (40 / 2)
+#define IconFontSize (50 / 2)
+
+
+#define ButtonFontSize (28 / 2)
+
+
+#define MinMargin 6 / 2
+#define SmallMargin 16 / 2
+#define CommonMargin 30 / 2
+#define BigMargin 60 / 2
+#define TitleMargin 40 / 2
+
+#define ButtonRadious 4 / 2;
+
+#define WhiteColor [UIColor colorWithRed:255 / 255. green:255 / 255. blue:255 / 255. alpha:100 / 100.]
+#define AlphaColor [UIColor colorWithRed:1 green:1 blue:1 alpha:0.9]
+#define ClearColor [UIColor clearColor]
+#define TestYellowColor [[UIColor yellowColor] colorWithAlphaComponent:.5]
+
+#define MainBGColor [UIColor colorWithRed:236 / 255. green:88 / 255. blue:78 / 255. alpha:100 / 100.]
+#define ViewBGColor [UIColor colorWithRed:236 / 255. green:236 / 255. blue:236 / 255. alpha:100 / 100.]
+#define ViewDarkBGColor [UIColor colorWithRed:203 / 255. green:203 / 255. blue:203 / 255. alpha:100 / 100.]
+#define BarBGBoxColor [UIColor colorWithRed:250 / 255. green:250 / 255. blue:250 / 255. alpha:100 / 100.]
+
+
+#define BarBGColor [UIColor colorWithRed:243 / 255. green:243 / 255. blue:243 / 255. alpha:100 / 100.]
+
+#define MainLineColor [UIColor colorWithRed:229 / 255. green:229 / 255. blue:229 / 255. alpha:100 / 100.]
+#define lineBGColor [UIColor colorWithRed:236 / 255. green:236 / 255. blue:236 / 255. alpha:100 / 100.]
+
+//1
+#define MainFontColor [UIColor colorWithRed:51 / 255. green:51 / 255. blue:51 / 255. alpha:100 / 100.]
+//2
+#define SubFontColor [UIColor colorWithRed:194 / 255. green:194 / 255. blue:194 / 255. alpha:100 / 100.]
+//3
+#define ButtonFontColor [UIColor colorWithRed:95 / 255. green:95 / 255. blue:95 / 255. alpha:100 / 100.]
+//4
+#define SubBigFontColor [UIColor colorWithRed:149 / 255. green:149 / 255. blue:149 / 255. alpha:100 / 100.]
+//5
+#define OtherSubFontColor [UIColor colorWithRed:178 / 255. green:178 / 255. blue:178 / 255. alpha:100 / 100.]
+
 
 
 
