@@ -9,7 +9,7 @@
 #import "MineViewController.h"
 
 
-#define headRect CGRectMake(0,0,self.view.bounds.size.width,280)
+#define headRect CGRectMake(0,0,self.view.bounds.size.width,594 / 2.)//280
 #define VCWidth self.view.bounds.size.width
 #define VCHeight self.view.bounds.size.height
 #define navHeight 44 //上推留下的高度
@@ -39,8 +39,28 @@
         [self addSubview:backgroundView];
         _backgroundView = backgroundView;
         
+        UIView *grayView = [[UIView alloc] initWithFrame:backgroundView.bounds];
+        grayView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.3];
+        
+        
+        
+        //使用Auto Layout约束，禁止将Autoresizing Mask转换为约束
+        [grayView setTranslatesAutoresizingMaskIntoConstraints:NO];
+        NSLayoutConstraint *contraint1 = [NSLayoutConstraint constraintWithItem:grayView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:_backgroundView attribute:NSLayoutAttributeTop multiplier:1.0 constant:0.0];
+        NSLayoutConstraint *contraint2 = [NSLayoutConstraint constraintWithItem:grayView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:_backgroundView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0];
+            NSLayoutConstraint *contraint3 = [NSLayoutConstraint constraintWithItem:grayView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:_backgroundView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+        NSLayoutConstraint *contraint4 = [NSLayoutConstraint constraintWithItem:grayView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:_backgroundView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
+//        NSLayoutConstraint *contraint5 = [NSLayoutConstraint constraintWithItem:subView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1.0 constant:70.0];
+        //把约束添加到父视图上
+        NSArray *array = [NSArray arrayWithObjects:contraint1, contraint2, contraint3, contraint4, nil];
+        [_backgroundView addConstraints:array];
+        
+        
+        
+        [_backgroundView addSubview:grayView];
+        
         UIImageView * headView = [[UIImageView alloc]initWithFrame:(CGRect){(frame.size.width - width) * 0.5,0.5 * (frame.size.height - width) - navHeight,width,width}];
-        headView.layer.cornerRadius = width*0.5;
+        headView.layer.cornerRadius = width * 0.5;
         headView.layer.masksToBounds = YES;
         headView.image = [UIImage imageNamed:headImgName];
         [self addSubview:headView];
@@ -52,6 +72,12 @@
         signLabel.textColor = [UIColor whiteColor];
         [self addSubview:signLabel];
         _signLabel = signLabel;
+        
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(20, CGRectGetHeight(_signLabel.frame), ScreenWidth - 20 * 2, 40)];
+        imageView.image = [UIImage imageNamed:@"level"];
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
+//        imageView.backgroundColor = [UIColor yellowColor];
+        [_signLabel addSubview:imageView];
     }
     return self;
 }
@@ -116,7 +142,7 @@
     
     [self.view addSubview:myTableView];
     
-    HeadView * vc = [[HeadView alloc]initWithFrame:headRect backgroundView:@"1.jpg" headView:@"2.jpg" headViewWidth:(CGFloat)(VCWidth / 4) signLabel:@"Crazy Steven 原创"];
+    HeadView * vc = [[HeadView alloc] initWithFrame:headRect backgroundView:@"1.jpg" headView:@"2.jpg" headViewWidth:(CGFloat)(VCWidth / 4) signLabel:@"Bear Out"];
     
     _myView = vc;
     _myView.backgroundColor = [UIColor clearColor];
@@ -177,7 +203,7 @@
     return 120 / 2.;
 }
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGFloat offset_Y = scrollView.contentOffset.y + headRect.size.height-navHeight-navHeight;
     

@@ -33,8 +33,13 @@
     
     
     self.smallLabel.text = @"强劲本质";
+    self.smallLabel.font = [UIFont fontWithName:@"Helvetica-BoldOblique" size:38 / 2.];
     self.addressLabel.text  = @"中国北京";
+    self.addressLabel.textColor = WhiteColor;
+    self.addressLabel.font = [UIFont systemFontOfSize:SmallSize];
     self.dateLabel.text = @"2016.05.03";
+    self.dateLabel.textColor = WhiteColor;
+    self.dateLabel.font = [UIFont systemFontOfSize:SmallSize];
     self.contentLabel.text = @"和故事空格键开关可看过就阿里过奖了十几个垃圾啊老规矩";
     self.contentLabel.numberOfLines = 0;
     
@@ -43,7 +48,7 @@
     self.grayView.hidden = YES;
     
     
-    self.backgroundColor = WhiteColor;
+    self.backgroundColor = ClearColor;
     
     self.bigImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.bigImageView.clipsToBounds = YES;
@@ -87,6 +92,8 @@
 //    [self.bigImageView sd_setImageWithURL:[YouyiImageManager appHomeLookbookURL:home.imageUrl] placeholderImage:[UIImage imageNamed:@"img-placeholder"]];
     self.timeLabel.text = @"test";
     self.bigImageView.image  = [UIImage imageNamed:[NSString stringWithFormat:@"%@.jpg", item[@"image"]]];
+    self.smallLabel.text = item[@"title"];
+    self.contentLabel.text = item[@"content"];
 
 }
 

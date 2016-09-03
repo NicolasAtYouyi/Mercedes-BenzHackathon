@@ -8,6 +8,7 @@
 
 #import "HomePreViewController.h"
 #import "HomePreViewCell.h"
+#import "HomeDetailViewController.h"
 
 
 @interface HomePreViewController () <UIScrollViewDelegate>
@@ -34,7 +35,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     [self.collectionView registerNib:[UINib nibWithNibName:@"HomePreViewCell" bundle:nil] forCellWithReuseIdentifier:reuseIdentifier];
     self.collectionView.showsHorizontalScrollIndicator = NO;
-    self.collectionView.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor clearColor];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadAction:) name:@"changText" object:nil];
 
@@ -70,10 +71,14 @@ static NSString * const reuseIdentifier = @"Cell";
     
     
     self.dataArray = [NSMutableArray array];
-    for (int i = 0; i < 7; i++) {
-        [self.dataArray addObject:@{@"image" : [NSString stringWithFormat:@"%d", i + 1]}];
-    }
+//    for (int i = 0; i < 7; i++) {
+        [self.dataArray addObject:@{@"image" : [NSString stringWithFormat:@"%d", 1], @"title" : @"【全程奔驰越野直播】", @"content" : @"活动对象:奔驰社区中称号为“俱乐部玩家”用户"}];
+//    }
     
+    [self.dataArray addObject:@{@"image" : [NSString stringWithFormat:@"%d", 2], @"title" : @"【精英俱乐部】夏日party", @"content" : @"活动对象:奔驰社区中称号为“俱乐部玩家”用户"}];
+    [self.dataArray addObject:@{@"image" : [NSString stringWithFormat:@"%d", 3], @"title" : @"今天的活动是奔驰精英俱乐部及北大emba班联合组织的年度活动，参与活动人员素质极高，80%皆是名校及海归。", @"content" : @"活动对象:奔驰意向客户、活动新招募客户、老客户、车友、当地媒体·试驾车辆:5台(XV1台,傲虎1台,森林人2台,BRZ1台,BRZ不进行试驾)"}];
+
+
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.4 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
@@ -124,6 +129,8 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     
+    HomeDetailViewController *homeDetailVC = [[HomeDetailViewController alloc] init];
+    [self.navigationController showViewController:homeDetailVC sender:nil];
 }
     
     

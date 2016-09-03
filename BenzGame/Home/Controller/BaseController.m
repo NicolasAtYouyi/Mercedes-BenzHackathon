@@ -30,6 +30,8 @@
     [super viewDidLoad];
     
     
+    self.view.layer.contents = (id)[UIImage imageNamed:@"homeBg"].CGImage;
+    
     HomePreViewFlowLayout *homePreViewFL = [[HomePreViewFlowLayout alloc] init];
     homePreViewVC = [[HomePreViewController alloc] initWithCollectionViewLayout:homePreViewFL];
     
@@ -45,7 +47,7 @@
         height = 528 / 2.;
     }
     
-    homePreViewVC.view.frame = CGRectMake(0, 80., ScreenWidth, height);
+    homePreViewVC.view.frame = CGRectMake(0, 80. + 40, ScreenWidth, height - 20);
     [self.view addSubview:homePreViewVC.view];
     
     self.automaticallyAdjustsScrollViewInsets = NO;
@@ -90,6 +92,7 @@
     frontView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 80., CGRectGetWidth(homePreViewVC.view.frame), homePreViewVC.collectionView.frame.size.height + CGRectGetHeight(labelView.frame))];
     
     frontView.contentSize = CGSizeMake(frontView.frame.size.width, frontView.frame.size.height);
+    frontView.backgroundColor = ClearColor;
     frontView.showsHorizontalScrollIndicator = NO;
     frontView.backgroundColor = ClearColor;
 //    frontView.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:.5];
@@ -124,6 +127,20 @@
 //    rightButton.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
 //    [rightButton setTitleColor:MainBGColor forState:(UIControlStateNormal)];
 //    [self.view addSubview:rightButton];
+    
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
+    topView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.5];
+    
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"qa_location"]];
+    imageView.frame = CGRectMake(ScreenWidth / 2. - 60 / 2., 25, 10, 15);
+    [topView addSubview:imageView];
+    
+    UILabel *addLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth / 2. - 30 / 2., 20, 40, 25)];
+    addLabel.textAlignment = NSTextAlignmentCenter;
+    addLabel.text = @"北京";
+    [topView addSubview:addLabel];
+    
+    [self.view addSubview:topView];
 }
 
 - (void)freshContentSize:(NSNotification *)notification {
