@@ -33,8 +33,8 @@
     
     self.animationDelegate = [[BGQuestionModelAnimation alloc] init];
     
-    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
-    NSString *fileName = [path stringByAppendingPathComponent:@"Questions.plist"];
+    NSString *fileName = [[NSBundle mainBundle] pathForResource:@"Questions" ofType:@"plist"];
+//    NSString *fileName = [path stringByAppendingPathComponent:@"Questions.plist"];
     
     self.questionsArr = [[NSMutableArray alloc] initWithContentsOfFile:fileName];
     
