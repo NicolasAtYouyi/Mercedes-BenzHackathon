@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37E1C45F1D7B3FB3009AE7EC /* BaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4411D7B3FB3009AE7EC /* BaseController.m */; };
+		37E1C4681D7B3FB3009AE7EC /* HomePreViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4521D7B3FB3009AE7EC /* HomePreViewCell.m */; };
+		37E1C4691D7B3FB3009AE7EC /* HomePreViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4531D7B3FB3009AE7EC /* HomePreViewCell.xib */; };
+		37E1C46A1D7B3FB3009AE7EC /* HomePreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4551D7B3FB3009AE7EC /* HomePreViewController.m */; };
+		37E1C46B1D7B3FB3009AE7EC /* HomePreViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4571D7B3FB3009AE7EC /* HomePreViewFlowLayout.m */; };
+		37E1C4781D7B4697009AE7EC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4711D7B4696009AE7EC /* 1.jpg */; };
+		37E1C4791D7B4697009AE7EC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4721D7B4697009AE7EC /* 2.jpg */; };
+		37E1C47A1D7B4697009AE7EC /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4731D7B4697009AE7EC /* 3.jpg */; };
+		37E1C47B1D7B4697009AE7EC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4741D7B4697009AE7EC /* 4.jpg */; };
+		37E1C47C1D7B4697009AE7EC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4751D7B4697009AE7EC /* 5.jpg */; };
+		37E1C47D1D7B4697009AE7EC /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4761D7B4697009AE7EC /* 6.jpg */; };
+		37E1C47E1D7B4697009AE7EC /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37E1C4771D7B4697009AE7EC /* 7.jpg */; };
+		37E1C4851D7B4836009AE7EC /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4841D7B4836009AE7EC /* MineViewController.m */; };
 		37E211641D7A9B6F00B69F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211631D7A9B6F00B69F54 /* main.m */; };
 		37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211661D7A9B6F00B69F54 /* AppDelegate.m */; };
 		37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211691D7A9B6F00B69F54 /* ViewController.m */; };
@@ -60,6 +73,24 @@
 
 /* Begin PBXFileReference section */
 		37CEDDC51D7AB02D00633388 /* Benz.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Benz.pch; sourceTree = "<group>"; };
+		37E1C4401D7B3FB3009AE7EC /* BaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseController.h; sourceTree = "<group>"; };
+		37E1C4411D7B3FB3009AE7EC /* BaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseController.m; sourceTree = "<group>"; };
+		37E1C4511D7B3FB3009AE7EC /* HomePreViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePreViewCell.h; sourceTree = "<group>"; };
+		37E1C4521D7B3FB3009AE7EC /* HomePreViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePreViewCell.m; sourceTree = "<group>"; };
+		37E1C4531D7B3FB3009AE7EC /* HomePreViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePreViewCell.xib; sourceTree = "<group>"; };
+		37E1C4541D7B3FB3009AE7EC /* HomePreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePreViewController.h; sourceTree = "<group>"; };
+		37E1C4551D7B3FB3009AE7EC /* HomePreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePreViewController.m; sourceTree = "<group>"; };
+		37E1C4561D7B3FB3009AE7EC /* HomePreViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePreViewFlowLayout.h; sourceTree = "<group>"; };
+		37E1C4571D7B3FB3009AE7EC /* HomePreViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePreViewFlowLayout.m; sourceTree = "<group>"; };
+		37E1C4711D7B4696009AE7EC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		37E1C4721D7B4697009AE7EC /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		37E1C4731D7B4697009AE7EC /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		37E1C4741D7B4697009AE7EC /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		37E1C4751D7B4697009AE7EC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		37E1C4761D7B4697009AE7EC /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		37E1C4771D7B4697009AE7EC /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		37E1C4831D7B4836009AE7EC /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		37E1C4841D7B4836009AE7EC /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		37E2115F1D7A9B6F00B69F54 /* BenzGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E211631D7A9B6F00B69F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37E211651D7A9B6F00B69F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +178,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37E1C43D1D7B3F2B009AE7EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C43E1D7B3F35009AE7EC /* Controller */,
+				37E1C43F1D7B3F3F009AE7EC /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		37E1C43E1D7B3F35009AE7EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C4401D7B3FB3009AE7EC /* BaseController.h */,
+				37E1C4411D7B3FB3009AE7EC /* BaseController.m */,
+				37E1C4541D7B3FB3009AE7EC /* HomePreViewController.h */,
+				37E1C4551D7B3FB3009AE7EC /* HomePreViewController.m */,
+				37E1C4561D7B3FB3009AE7EC /* HomePreViewFlowLayout.h */,
+				37E1C4571D7B3FB3009AE7EC /* HomePreViewFlowLayout.m */,
+				37E1C4511D7B3FB3009AE7EC /* HomePreViewCell.h */,
+				37E1C4521D7B3FB3009AE7EC /* HomePreViewCell.m */,
+				37E1C4531D7B3FB3009AE7EC /* HomePreViewCell.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E1C43F1D7B3F3F009AE7EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		37E1C4701D7B4696009AE7EC /* photo */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C4711D7B4696009AE7EC /* 1.jpg */,
+				37E1C4721D7B4697009AE7EC /* 2.jpg */,
+				37E1C4731D7B4697009AE7EC /* 3.jpg */,
+				37E1C4741D7B4697009AE7EC /* 4.jpg */,
+				37E1C4751D7B4697009AE7EC /* 5.jpg */,
+				37E1C4761D7B4697009AE7EC /* 6.jpg */,
+				37E1C4771D7B4697009AE7EC /* 7.jpg */,
+			);
+			path = photo;
+			sourceTree = "<group>";
+		};
+		37E1C47F1D7B47B7009AE7EC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C4801D7B47C4009AE7EC /* Controller */,
+				37E1C4811D7B47E3009AE7EC /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		37E1C4801D7B47C4009AE7EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37E1C4831D7B4836009AE7EC /* MineViewController.h */,
+				37E1C4841D7B4836009AE7EC /* MineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		37E1C4811D7B47E3009AE7EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		37E211561D7A9B6F00B69F54 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +274,8 @@
 		37E211611D7A9B6F00B69F54 /* BenzGame */ = {
 			isa = PBXGroup;
 			children = (
+				37E1C43D1D7B3F2B009AE7EC /* Home */,
+				37E1C47F1D7B47B7009AE7EC /* Mine */,
 				FC82D5811D7AF06D00643C18 /* Data */,
 				FC82D39F1D7AD18F00643C18 /* Vendor */,
 				FC82D3961D7ACFBE00643C18 /* Common */,
@@ -351,6 +455,7 @@
 		FC82D5811D7AF06D00643C18 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				37E1C4701D7B4696009AE7EC /* photo */,
 				FC82D5821D7AF08400643C18 /* BGDataUtil.h */,
 				FC82D5831D7AF08400643C18 /* BGDataUtil.m */,
 			);
@@ -393,6 +498,7 @@
 				37E2115C1D7A9B6F00B69F54 /* Frameworks */,
 				37E2115D1D7A9B6F00B69F54 /* Resources */,
 				1D91A58C1C929BD5DE933004 /* Copy Pods Resources */,
+				70E9965E204FCD7337DD989A /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -489,13 +595,21 @@
 				FC82D38F1D7AC93500643C18 /* BGQuestionListViewController.xib in Resources */,
 				FC82D3891D7AC71000643C18 /* BGForumViewController.xib in Resources */,
 				FC82D58F1D7B046D00643C18 /* BGQuestionDetailViewController.xib in Resources */,
+				37E1C47B1D7B4697009AE7EC /* 4.jpg in Resources */,
 				37E211721D7A9B6F00B69F54 /* LaunchScreen.storyboard in Resources */,
 				FC82D3951D7AC9B900643C18 /* BGQuestionTableViewCell.xib in Resources */,
+				37E1C47A1D7B4697009AE7EC /* 3.jpg in Resources */,
 				FCD42C8A1D7B21520067B380 /* BGQuestionDetailHeaderCell.xib in Resources */,
 				FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */,
+				37E1C47D1D7B4697009AE7EC /* 6.jpg in Resources */,
+				37E1C47C1D7B4697009AE7EC /* 5.jpg in Resources */,
 				FCD42C851D7B21440067B380 /* BGQuestionDetailCell.xib in Resources */,
 				37E2116F1D7A9B6F00B69F54 /* Assets.xcassets in Resources */,
+				37E1C4791D7B4697009AE7EC /* 2.jpg in Resources */,
+				37E1C4781D7B4697009AE7EC /* 1.jpg in Resources */,
+				37E1C47E1D7B4697009AE7EC /* 7.jpg in Resources */,
 				37E2116D1D7A9B6F00B69F54 /* Main.storyboard in Resources */,
+				37E1C4691D7B3FB3009AE7EC /* HomePreViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +645,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		70E9965E204FCD7337DD989A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C75D09410DDA9D46D5901D74 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -558,13 +687,17 @@
 				FC82D5801D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				FC82D57F1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FC82D39E1D7AD11A00643C18 /* ZUISwipePageViewController.m in Sources */,
+				37E1C46A1D7B3FB3009AE7EC /* HomePreViewController.m in Sources */,
 				37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */,
+				37E1C45F1D7B3FB3009AE7EC /* BaseController.m in Sources */,
 				FC82D39A1D7ACFD800643C18 /* UIColor+HexColor.m in Sources */,
 				FC82D38E1D7AC93500643C18 /* BGQuestionListViewController.m in Sources */,
 				FCD42C841D7B21440067B380 /* BGQuestionDetailCell.m in Sources */,
 				37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */,
 				FC82D3941D7AC9B900643C18 /* BGQuestionTableViewCell.m in Sources */,
+				37E1C46B1D7B3FB3009AE7EC /* HomePreViewFlowLayout.m in Sources */,
 				37E211641D7A9B6F00B69F54 /* main.m in Sources */,
+				37E1C4851D7B4836009AE7EC /* MineViewController.m in Sources */,
 				FC82D58E1D7B046D00643C18 /* BGQuestionDetailViewController.m in Sources */,
 				FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */,
 				FCD42C891D7B21520067B380 /* BGQuestionDetailHeaderCell.m in Sources */,
@@ -572,6 +705,7 @@
 				FC82D5921D7B0AA700643C18 /* BGQuestionModelAnimation.m in Sources */,
 				FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */,
 				FC82D5731D7AD1AA00643C18 /* RKSwipeBetweenViewControllers.m in Sources */,
+				37E1C4681D7B3FB3009AE7EC /* HomePreViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
