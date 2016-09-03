@@ -1,4 +1,2 @@
 platform:ios, ‘8.0’
-
-pod 'SDWebImage'
-
+pod 'SDWebImage', '~> 3.8.1'
