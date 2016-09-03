@@ -15,5 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *locationImgV;
 @property (weak, nonatomic) IBOutlet UIView *sepratorView;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *viewsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *replysLabel;
 
 @end

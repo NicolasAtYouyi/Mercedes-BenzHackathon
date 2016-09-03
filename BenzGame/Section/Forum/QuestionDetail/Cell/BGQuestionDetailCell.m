@@ -15,6 +15,10 @@
     [super awakeFromNib];
     
     self.sepratorView.backgroundColor = [UIColor colorWithHexStr:kSepratorColorStr];
+    
+    self.contentLabel.numberOfLines = 0;
+    self.contentLabel.font = [UIFont fontWithName:kFontName size:kAnswerContentFontFize];
+    self.contentLabel.textColor = [UIColor colorWithHexStr:kAnswerContentColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

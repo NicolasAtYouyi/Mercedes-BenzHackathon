@@ -22,56 +22,56 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJq-CL-iRd">
-                        <rect key="frame" x="20" y="15" width="288" height="20.5"/>
+                        <rect key="frame" x="20" y="33" width="288" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="qa_location" translatesAutoresizingMaskIntoConstraints="NO" id="FqV-TU-zxd">
-                        <rect key="frame" x="20" y="45.5" width="30" height="30"/>
+                        <rect key="frame" x="20" y="63.5" width="12" height="16"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pw-BJ-PNh">
-                        <rect key="frame" x="56" y="49.5" width="42" height="21"/>
+                        <rect key="frame" x="38" y="61" width="42" height="20"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="qa_time" translatesAutoresizingMaskIntoConstraints="NO" id="EtO-8R-IAU">
-                        <rect key="frame" x="-18" y="-24" width="240" height="128"/>
+                        <rect key="frame" x="90" y="63" width="16" height="16"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPb-DB-dmI">
-                        <rect key="frame" x="243" y="43" width="42" height="21"/>
+                        <rect key="frame" x="112" y="60.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="qa_views" translatesAutoresizingMaskIntoConstraints="NO" id="3LA-IG-cLb">
-                        <rect key="frame" x="44" y="33" width="240" height="128"/>
+                        <rect key="frame" x="164" y="63" width="16" height="16"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8C-rD-Na1">
-                        <rect key="frame" x="143" y="86" width="42" height="21"/>
+                        <rect key="frame" x="186" y="60" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="qa_reply" translatesAutoresizingMaskIntoConstraints="NO" id="Tth-BQ-tD1">
-                        <rect key="frame" x="44" y="33" width="240" height="128"/>
+                        <rect key="frame" x="238" y="63" width="16" height="16"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkC-j2-iCn">
-                        <rect key="frame" x="143" y="86" width="42" height="21"/>
+                        <rect key="frame" x="260" y="60" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nt4-ZT-dAD">
-                        <rect key="frame" x="15" y="85.5" width="298" height="1"/>
+                        <rect key="frame" x="15" y="89.5" width="298" height="1"/>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.15686274510000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="6HS-7k-q2R"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vno-dF-gJW">
-                        <rect key="frame" x="20" y="96.5" width="288" height="31"/>
+                        <rect key="frame" x="20" y="100.5" width="288" height="27"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
@@ -90,9 +90,12 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zod-aZ-8hb">
-                        <rect key="frame" x="262" y="142" width="46" height="30"/>
-                        <state key="normal" title="Button"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zod-aZ-8hb">
+                        <rect key="frame" x="295" y="146" width="13" height="22"/>
+                        <state key="normal" image="up"/>
+                        <connections>
+                            <action selector="likeBtnAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oHv-od-h5Z"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -161,5 +164,6 @@
         <image name="qa_reply" width="16" height="16"/>
         <image name="qa_time" width="16" height="16"/>
         <image name="qa_views" width="16" height="16"/>
+        <image name="up" width="13" height="14"/>
     </resources>
 </document>

@@ -10,4 +10,10 @@
 
 @interface BGDataUtil : NSObject
 
+@property (strong, nonatomic) NSMutableArray *questionsArr;
+@property (strong, nonatomic) NSArray * usersArr;
+
+
++(instancetype)sharedInstance;
+
 @end

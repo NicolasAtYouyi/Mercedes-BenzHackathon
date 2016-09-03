@@ -133,6 +133,9 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
         }
         cell.qTitleLabel.text = self.questionDic[kTItle];
         cell.locationLabel.text = self.questionDic[kLocation];
+        cell.timeLabel.text = self.questionDic[kTime];
+        cell.replysLabel.text = self.questionDic[kAnswersCount];
+        cell.viewsLabel.text = [NSString stringWithFormat:@"%d",[self.questionDic[kAnswersCount] integerValue] + 20];
 }
 
 

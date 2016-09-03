@@ -31,8 +31,8 @@
     
     self.lineView.backgroundColor = [UIColor colorWithHexStr:kLineColorStr];
     
-    self.qTitleLabel.font = [UIFont fontWithName:kFontName size:13];
-    self.qTitleLabel.textColor = [UIColor colorWithHexStr:@"141414"];
+    self.qTitleLabel.font = [UIFont fontWithName:kFontName size:kQuestionTitleFontFize];
+    self.qTitleLabel.textColor = [UIColor colorWithHexStr:kQuestionTitleColor];
     
     self.locationLabel.font = [UIFont fontWithName:kFontName size:kTagFontFize];
     self.locationLabel.textColor = [UIColor colorWithHexStr:@"848484"];
@@ -46,13 +46,13 @@
     self.replysLabel.font = [UIFont fontWithName:kFontName size:kTagFontFize];
     self.replysLabel.textColor = [UIColor colorWithHexStr:@"848484"];
     
-    self.answerLabel.font = [UIFont fontWithName:kFontName size:14];
-    self.answerLabel.textColor = [UIColor colorWithHexStr:@"737373"];
+    self.answerLabel.font = [UIFont fontWithName:kFontName size:kAnswerContentFontFize];
+    self.answerLabel.textColor = [UIColor colorWithHexStr:kAnswerContentColor];
     
-    self.userNameLabel.font = [UIFont fontWithName:kFontName size:18];
+    self.userNameLabel.font = [UIFont fontWithName:kFontName size:kUserNameFontFize];
     self.userNameLabel.textColor = [UIColor blackColor];
     
-    self.likeBtn.titleLabel.font = [UIFont fontWithName:kFontName size:14];
+    self.likeBtn.titleLabel.font = [UIFont fontWithName:kFontName size:kAnswerLikeFontFize];
     [self.likeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
     self.userAvatarBtn.layer.cornerRadius = 15;
@@ -64,6 +64,14 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (IBAction)likeBtnAction:(id)sender {
+    if (self.likeBtn.isSelected) {
+        [self.likeBtn setImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
+    } else {
+        [self.likeBtn setImage:[UIImage imageNamed:@"up_selected"] forState:UIControlStateNormal];
+    }
+    [self.likeBtn setSelected:!self.likeBtn.isSelected];
 }
 
 @end

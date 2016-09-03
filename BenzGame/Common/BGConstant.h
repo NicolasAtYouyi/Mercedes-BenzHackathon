@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "UIColor+HexColor.h"
+#import "BGDataUtil.h"
 
 
 static NSString * const kFontName = @"PingFang SC";
@@ -25,11 +26,17 @@ static NSString const *kAnswersCount = @"kAnswersCount";
 static NSString const *kAnswersArr = @"kAnswersArr";
 static NSString const *kUsreInfo = @"kUsreInfo";
 
-static NSString const *kUsreName = @"kUsreName";
-static NSString const *kUsreAvatar = @"kUsreAvatar";
+static NSString const *kUsreName = @"name";
+static NSString const *kUsreAvatar = @"avatar";
 
 static NSString const *kContent = @"content";
 static NSString const *kLikeNum = @"likeCount";
 
 
 static NSInteger const kTagFontFize = 10;
+static NSInteger const kQuestionTitleFontFize = 14;
+static NSString * const kQuestionTitleColor = @"141414";
+static NSInteger const kAnswerContentFontFize = 13;
+static NSString * const kAnswerContentColor = @"737373";
+static NSInteger const kUserNameFontFize = 12;
+static NSInteger const kAnswerLikeFontFize = 12;

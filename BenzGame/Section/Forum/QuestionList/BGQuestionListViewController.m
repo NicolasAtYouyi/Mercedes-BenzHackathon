@@ -118,13 +118,18 @@
     cell.timeLabel.text = dic[kTime];
     cell.replysLabel.text = dic[kAnswersCount];
     cell.viewsLabel.text = [NSString stringWithFormat:@"%d",[dic[kAnswersCount] integerValue] + 20];
-    
     NSArray *array = dic[kAnswersArr];
     if (array.count > 0 ) {
         NSDictionary *answerDic = [array firstObject];
         cell.answerLabel.text = answerDic[kContent];
-        [cell.likeBtn setTitle:answerDic[kLikeNum] forState:UIControlStateNormal];
+        [cell.likeBtn setTitle:[NSString stringWithFormat:@" %@", answerDic[kLikeNum]] forState:UIControlStateNormal];
     }
+    
+    NSArray *userArr = [BGDataUtil sharedInstance].usersArr;
+    
+    NSDictionary *userDic = userArr[indexPath.row % userArr.count];
+    cell.userNameLabel.text = userDic[kUsreName];
+    [cell.userAvatarBtn setImage:[UIImage imageNamed:userDic[kUsreAvatar]] forState:UIControlStateNormal];
 }
 
 

@@ -32,7 +32,6 @@
 		FC82D57F1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D57A1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m */; };
 		FC82D5801D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D57C1D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m */; };
 		FC82D5841D7AF08400643C18 /* BGDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D5831D7AF08400643C18 /* BGDataUtil.m */; };
-		FC82D5871D7B004300643C18 /* BGConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D5861D7B004300643C18 /* BGConstant.m */; };
 		FC82D58E1D7B046D00643C18 /* BGQuestionDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D58C1D7B046D00643C18 /* BGQuestionDetailViewController.m */; };
 		FC82D58F1D7B046D00643C18 /* BGQuestionDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC82D58D1D7B046D00643C18 /* BGQuestionDetailViewController.xib */; };
 		FC82D5921D7B0AA700643C18 /* BGQuestionModelAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D5911D7B0AA700643C18 /* BGQuestionModelAnimation.m */; };
@@ -109,7 +108,6 @@
 		FC82D5821D7AF08400643C18 /* BGDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGDataUtil.h; sourceTree = "<group>"; };
 		FC82D5831D7AF08400643C18 /* BGDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGDataUtil.m; sourceTree = "<group>"; };
 		FC82D5851D7B004300643C18 /* BGConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGConstant.h; sourceTree = "<group>"; };
-		FC82D5861D7B004300643C18 /* BGConstant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGConstant.m; sourceTree = "<group>"; };
 		FC82D58B1D7B046D00643C18 /* BGQuestionDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGQuestionDetailViewController.h; sourceTree = "<group>"; };
 		FC82D58C1D7B046D00643C18 /* BGQuestionDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGQuestionDetailViewController.m; sourceTree = "<group>"; };
 		FC82D58D1D7B046D00643C18 /* BGQuestionDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGQuestionDetailViewController.xib; sourceTree = "<group>"; };
@@ -295,7 +293,6 @@
 				FC82D39B1D7AD10400643C18 /* PageViewController */,
 				FC82D3971D7ACFC900643C18 /* Category */,
 				FC82D5851D7B004300643C18 /* BGConstant.h */,
-				FC82D5861D7B004300643C18 /* BGConstant.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -567,7 +564,6 @@
 				FCD42C841D7B21440067B380 /* BGQuestionDetailCell.m in Sources */,
 				37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */,
 				FC82D3941D7AC9B900643C18 /* BGQuestionTableViewCell.m in Sources */,
-				FC82D5871D7B004300643C18 /* BGConstant.m in Sources */,
 				37E211641D7A9B6F00B69F54 /* main.m in Sources */,
 				FC82D58E1D7B046D00643C18 /* BGQuestionDetailViewController.m in Sources */,
 				FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */,

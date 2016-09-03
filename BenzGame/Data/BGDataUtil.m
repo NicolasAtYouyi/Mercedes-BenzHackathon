@@ -9,9 +9,6 @@
 #import "BGDataUtil.h"
 @interface BGDataUtil()
 
-@property (strong, nonatomic) NSMutableArray *questionsArr;
-@property (strong, nonatomic) NSMutableArray * usersArr;
-
 @end
 
 @implementation BGDataUtil
@@ -20,22 +17,20 @@
     static BGDataUtil *singleton = nil;
     if (! singleton) {
         singleton = [[self alloc] init];
+        singleton.usersArr = @[@{@"id":@1, @"name": @"邦德", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"阿甘", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"云儿", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"小熊熊", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"Bob", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"老范", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"小明", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"o2海马", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"孙行者", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"洛奇", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
+                               @{@"id":@1, @"name": @"查尔斯", @"avatar": @"avatar_1", @"level": @1, @"identity": @1}];
+        
     }
     return singleton;
-}
-
-- (NSMutableArray *)getQuestionArr{
-    
-    if (_questionsArr == nil || _questionsArr.count <= 0) {
-        
-        
-        
-        
-        
-        
-    }
-    
-    return _questionsArr;
 }
 
 
