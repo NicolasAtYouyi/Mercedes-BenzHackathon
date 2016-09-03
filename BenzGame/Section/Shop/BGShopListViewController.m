@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *wishListBtn;
 
 @property (strong, nonnull) UIImageView *wishListAnimationImgView;
+
 @end
 
 @implementation BGShopListViewController
