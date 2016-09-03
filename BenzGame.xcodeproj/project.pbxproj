@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37E211641D7A9B6F00B69F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211631D7A9B6F00B69F54 /* main.m */; };
+		37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211661D7A9B6F00B69F54 /* AppDelegate.m */; };
+		37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211691D7A9B6F00B69F54 /* ViewController.m */; };
+		37E2116D1D7A9B6F00B69F54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E2116B1D7A9B6F00B69F54 /* Main.storyboard */; };
+		37E2116F1D7A9B6F00B69F54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37E2116E1D7A9B6F00B69F54 /* Assets.xcassets */; };
+		37E211721D7A9B6F00B69F54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37E211701D7A9B6F00B69F54 /* LaunchScreen.storyboard */; };
+		37E2117D1D7A9B6F00B69F54 /* BenzGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E2117C1D7A9B6F00B69F54 /* BenzGameTests.m */; };
+		37E211881D7A9B6F00B69F54 /* BenzGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211871D7A9B6F00B69F54 /* BenzGameUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37E211791D7A9B6F00B69F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E211571D7A9B6F00B69F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37E2115E1D7A9B6F00B69F54;
+			remoteInfo = BenzGame;
+		};
+		37E211841D7A9B6F00B69F54 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37E211571D7A9B6F00B69F54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37E2115E1D7A9B6F00B69F54;
+			remoteInfo = BenzGame;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37E2115F1D7A9B6F00B69F54 /* BenzGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E211631D7A9B6F00B69F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37E211651D7A9B6F00B69F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37E211661D7A9B6F00B69F54 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37E211681D7A9B6F00B69F54 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37E211691D7A9B6F00B69F54 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37E2116C1D7A9B6F00B69F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37E2116E1D7A9B6F00B69F54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37E211711D7A9B6F00B69F54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37E211731D7A9B6F00B69F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E211781D7A9B6F00B69F54 /* BenzGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenzGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E2117C1D7A9B6F00B69F54 /* BenzGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BenzGameTests.m; sourceTree = "<group>"; };
+		37E2117E1D7A9B6F00B69F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37E211831D7A9B6F00B69F54 /* BenzGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BenzGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E211871D7A9B6F00B69F54 /* BenzGameUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BenzGameUITests.m; sourceTree = "<group>"; };
+		37E211891D7A9B6F00B69F54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37E2115C1D7A9B6F00B69F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E211751D7A9B6F00B69F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E211801D7A9B6F00B69F54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37E211561D7A9B6F00B69F54 = {
+			isa = PBXGroup;
+			children = (
+				37E211611D7A9B6F00B69F54 /* BenzGame */,
+				37E2117B1D7A9B6F00B69F54 /* BenzGameTests */,
+				37E211861D7A9B6F00B69F54 /* BenzGameUITests */,
+				37E211601D7A9B6F00B69F54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37E211601D7A9B6F00B69F54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37E2115F1D7A9B6F00B69F54 /* BenzGame.app */,
+				37E211781D7A9B6F00B69F54 /* BenzGameTests.xctest */,
+				37E211831D7A9B6F00B69F54 /* BenzGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37E211611D7A9B6F00B69F54 /* BenzGame */ = {
+			isa = PBXGroup;
+			children = (
+				37E211651D7A9B6F00B69F54 /* AppDelegate.h */,
+				37E211661D7A9B6F00B69F54 /* AppDelegate.m */,
+				37E211681D7A9B6F00B69F54 /* ViewController.h */,
+				37E211691D7A9B6F00B69F54 /* ViewController.m */,
+				37E2116B1D7A9B6F00B69F54 /* Main.storyboard */,
+				37E2116E1D7A9B6F00B69F54 /* Assets.xcassets */,
+				37E211701D7A9B6F00B69F54 /* LaunchScreen.storyboard */,
+				37E211731D7A9B6F00B69F54 /* Info.plist */,
+				37E211621D7A9B6F00B69F54 /* Supporting Files */,
+			);
+			path = BenzGame;
+			sourceTree = "<group>";
+		};
+		37E211621D7A9B6F00B69F54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37E211631D7A9B6F00B69F54 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37E2117B1D7A9B6F00B69F54 /* BenzGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				37E2117C1D7A9B6F00B69F54 /* BenzGameTests.m */,
+				37E2117E1D7A9B6F00B69F54 /* Info.plist */,
+			);
+			path = BenzGameTests;
+			sourceTree = "<group>";
+		};
+		37E211861D7A9B6F00B69F54 /* BenzGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37E211871D7A9B6F00B69F54 /* BenzGameUITests.m */,
+				37E211891D7A9B6F00B69F54 /* Info.plist */,
+			);
+			path = BenzGameUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37E2115E1D7A9B6F00B69F54 /* BenzGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E2118C1D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGame" */;
+			buildPhases = (
+				37E2115B1D7A9B6F00B69F54 /* Sources */,
+				37E2115C1D7A9B6F00B69F54 /* Frameworks */,
+				37E2115D1D7A9B6F00B69F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BenzGame;
+			productName = BenzGame;
+			productReference = 37E2115F1D7A9B6F00B69F54 /* BenzGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37E211771D7A9B6F00B69F54 /* BenzGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E2118F1D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGameTests" */;
+			buildPhases = (
+				37E211741D7A9B6F00B69F54 /* Sources */,
+				37E211751D7A9B6F00B69F54 /* Frameworks */,
+				37E211761D7A9B6F00B69F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E2117A1D7A9B6F00B69F54 /* PBXTargetDependency */,
+			);
+			name = BenzGameTests;
+			productName = BenzGameTests;
+			productReference = 37E211781D7A9B6F00B69F54 /* BenzGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37E211821D7A9B6F00B69F54 /* BenzGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37E211921D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGameUITests" */;
+			buildPhases = (
+				37E2117F1D7A9B6F00B69F54 /* Sources */,
+				37E211801D7A9B6F00B69F54 /* Frameworks */,
+				37E211811D7A9B6F00B69F54 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37E211851D7A9B6F00B69F54 /* PBXTargetDependency */,
+			);
+			name = BenzGameUITests;
+			productName = BenzGameUITests;
+			productReference = 37E211831D7A9B6F00B69F54 /* BenzGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37E211571D7A9B6F00B69F54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = AndyVan;
+				TargetAttributes = {
+					37E2115E1D7A9B6F00B69F54 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					37E211771D7A9B6F00B69F54 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 37E2115E1D7A9B6F00B69F54;
+					};
+					37E211821D7A9B6F00B69F54 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 37E2115E1D7A9B6F00B69F54;
+					};
+				};
+			};
+			buildConfigurationList = 37E2115A1D7A9B6F00B69F54 /* Build configuration list for PBXProject "BenzGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37E211561D7A9B6F00B69F54;
+			productRefGroup = 37E211601D7A9B6F00B69F54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37E2115E1D7A9B6F00B69F54 /* BenzGame */,
+				37E211771D7A9B6F00B69F54 /* BenzGameTests */,
+				37E211821D7A9B6F00B69F54 /* BenzGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37E2115D1D7A9B6F00B69F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E211721D7A9B6F00B69F54 /* LaunchScreen.storyboard in Resources */,
+				37E2116F1D7A9B6F00B69F54 /* Assets.xcassets in Resources */,
+				37E2116D1D7A9B6F00B69F54 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E211761D7A9B6F00B69F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E211811D7A9B6F00B69F54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37E2115B1D7A9B6F00B69F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */,
+				37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */,
+				37E211641D7A9B6F00B69F54 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E211741D7A9B6F00B69F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E2117D1D7A9B6F00B69F54 /* BenzGameTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E2117F1D7A9B6F00B69F54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37E211881D7A9B6F00B69F54 /* BenzGameUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37E2117A1D7A9B6F00B69F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37E2115E1D7A9B6F00B69F54 /* BenzGame */;
+			targetProxy = 37E211791D7A9B6F00B69F54 /* PBXContainerItemProxy */;
+		};
+		37E211851D7A9B6F00B69F54 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37E2115E1D7A9B6F00B69F54 /* BenzGame */;
+			targetProxy = 37E211841D7A9B6F00B69F54 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		37E2116B1D7A9B6F00B69F54 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E2116C1D7A9B6F00B69F54 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37E211701D7A9B6F00B69F54 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E211711D7A9B6F00B69F54 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37E2118A1D7A9B6F00B69F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37E2118B1D7A9B6F00B69F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37E2118D1D7A9B6F00B69F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BenzGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37E2118E1D7A9B6F00B69F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BenzGame/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		37E211901D7A9B6F00B69F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BenzGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BenzGame.app/BenzGame";
+			};
+			name = Debug;
+		};
+		37E211911D7A9B6F00B69F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BenzGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BenzGame.app/BenzGame";
+			};
+			name = Release;
+		};
+		37E211931D7A9B6F00B69F54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BenzGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BenzGame;
+			};
+			name = Debug;
+		};
+		37E211941D7A9B6F00B69F54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BenzGameUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGameUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BenzGame;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37E2115A1D7A9B6F00B69F54 /* Build configuration list for PBXProject "BenzGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E2118A1D7A9B6F00B69F54 /* Debug */,
+				37E2118B1D7A9B6F00B69F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37E2118C1D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E2118D1D7A9B6F00B69F54 /* Debug */,
+				37E2118E1D7A9B6F00B69F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37E2118F1D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E211901D7A9B6F00B69F54 /* Debug */,
+				37E211911D7A9B6F00B69F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		37E211921D7A9B6F00B69F54 /* Build configuration list for PBXNativeTarget "BenzGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37E211931D7A9B6F00B69F54 /* Debug */,
+				37E211941D7A9B6F00B69F54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37E211571D7A9B6F00B69F54 /* Project object */;
+}
