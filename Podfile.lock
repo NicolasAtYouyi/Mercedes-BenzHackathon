@@ -4,7 +4,7 @@ PODS:
   - SDWebImage/Core (3.8.1)
 
 DEPENDENCIES:
-  - SDWebImage (~> 3.8.1)
+  - SDWebImage
 
 SPEC CHECKSUMS:
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
