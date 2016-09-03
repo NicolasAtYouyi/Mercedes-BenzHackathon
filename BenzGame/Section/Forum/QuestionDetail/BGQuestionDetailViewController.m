@@ -51,6 +51,8 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
 - (void)setupSubview{
     
     self.titleView.backgroundColor = [UIColor colorWithHexStr:kMainBkgColorStr];
+    self.titleLabel.font = [UIFont fontWithName:kFontName size:14];
+    self.titleLabel.textColor = [UIColor whiteColor];
     self.view.frame = [UIScreen mainScreen].bounds;
     
     self.tableView.backgroundColor = [UIColor colorWithHexStr:@"efefef"];
@@ -66,6 +68,12 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
 - (IBAction)shareBtnAction:(id)sender {
 }
 - (IBAction)collectBtnAction:(id)sender {
+    if (self.collectBtn.isSelected) {
+        [self.collectBtn setImage:[UIImage imageNamed:@"collect"] forState:UIControlStateNormal];
+    } else {
+        [self.collectBtn setImage:[UIImage imageNamed:@"collect_selected"] forState:UIControlStateNormal];
+    }
+    [self.collectBtn setSelected:!self.collectBtn.selected];
 }
 - (IBAction)backBtnAction:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
@@ -86,7 +94,7 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
         cell = [tableView dequeueReusableCellWithIdentifier:kCell forIndexPath:indexPath];
         [self configCell:(BGQuestionDetailCell *)cell indexPath:indexPath];
     }
-    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -125,6 +133,12 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
     
     cell.contentLabel.text = dic[kContent];
     [cell.likeBtn setTitle:dic[kLikeNum] forState:UIControlStateNormal];
+    
+    
+    NSArray *userArr = [BGDataUtil sharedInstance].usersArr;
+    NSDictionary *userDic = userArr[indexPath.row % userArr.count];
+    cell.nameLabel.text = userDic[kUsreName];
+    [cell.avatarBtn setImage:[UIImage imageNamed:userDic[kUsreAvatar]] forState:UIControlStateNormal];
 }
 
 - (void)configHeaderCell:(BGQuestionDetailHeaderCell *)cell indexPath:(NSIndexPath *)indexPath {

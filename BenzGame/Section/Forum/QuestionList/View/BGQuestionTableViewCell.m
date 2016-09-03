@@ -57,7 +57,6 @@
     
     self.userAvatarBtn.layer.cornerRadius = 15;
     self.userAvatarBtn.layer.masksToBounds = YES;
-    self.userAvatarBtn.backgroundColor = [UIColor redColor];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
