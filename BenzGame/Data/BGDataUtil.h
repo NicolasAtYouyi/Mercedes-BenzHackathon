@@ -14,6 +14,9 @@
 @property (strong, nonatomic) NSArray * usersArr;
 
 
+@property (strong, nonnull) NSArray *shopListArr;
+
+
 +(instancetype)sharedInstance;
 
 @end

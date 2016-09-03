@@ -20,6 +20,13 @@
 		FC1876AC1D7B48E400B620FD /* ZUIShareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1876A81D7B48E400B620FD /* ZUIShareCollectionViewCell.swift */; };
 		FC1876AD1D7B48E400B620FD /* ZUIShareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1876A91D7B48E400B620FD /* ZUIShareCollectionViewCell.xib */; };
 		FC1876AE1D7B48E400B620FD /* ZUIShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1876AB1D7B48E400B620FD /* ZUIShareViewController.swift */; };
+		FC1876B41D7B4C6E00B620FD /* BGShopListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1876B21D7B4C6E00B620FD /* BGShopListViewController.m */; };
+		FC1876B51D7B4C6E00B620FD /* BGShopListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1876B31D7B4C6E00B620FD /* BGShopListViewController.xib */; };
+		FC1876B91D7B4D5200B620FD /* BGShopListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1876B71D7B4D5200B620FD /* BGShopListCell.m */; };
+		FC1876BA1D7B4D5200B620FD /* BGShopListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1876B81D7B4D5200B620FD /* BGShopListCell.xib */; };
+		FC1876BD1D7B57B400B620FD /* shop_1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FC1876BC1D7B57B400B620FD /* shop_1.jpeg */; };
+		FC4BD52B1D7B5EF200B608A6 /* shop_2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD5291D7B5EF200B608A6 /* shop_2.jpeg */; };
+		FC4BD52C1D7B5EF200B608A6 /* shop_3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD52A1D7B5EF200B608A6 /* shop_3.jpeg */; };
 		FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */; };
 		FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3821D7AC60000643C18 /* BGTabViewController.m */; };
 		FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3861D7AC71000643C18 /* BGForumViewController.m */; };
@@ -88,6 +95,15 @@
 		FC1876A81D7B48E400B620FD /* ZUIShareCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUIShareCollectionViewCell.swift; sourceTree = "<group>"; };
 		FC1876A91D7B48E400B620FD /* ZUIShareCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZUIShareCollectionViewCell.xib; sourceTree = "<group>"; };
 		FC1876AB1D7B48E400B620FD /* ZUIShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUIShareViewController.swift; sourceTree = "<group>"; };
+		FC1876B11D7B4C6E00B620FD /* BGShopListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGShopListViewController.h; sourceTree = "<group>"; };
+		FC1876B21D7B4C6E00B620FD /* BGShopListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGShopListViewController.m; sourceTree = "<group>"; };
+		FC1876B31D7B4C6E00B620FD /* BGShopListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGShopListViewController.xib; sourceTree = "<group>"; };
+		FC1876B61D7B4D5200B620FD /* BGShopListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGShopListCell.h; sourceTree = "<group>"; };
+		FC1876B71D7B4D5200B620FD /* BGShopListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGShopListCell.m; sourceTree = "<group>"; };
+		FC1876B81D7B4D5200B620FD /* BGShopListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGShopListCell.xib; sourceTree = "<group>"; };
+		FC1876BC1D7B57B400B620FD /* shop_1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shop_1.jpeg; sourceTree = "<group>"; };
+		FC4BD5291D7B5EF200B608A6 /* shop_2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shop_2.jpeg; sourceTree = "<group>"; };
+		FC4BD52A1D7B5EF200B608A6 /* shop_3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shop_3.jpeg; sourceTree = "<group>"; };
 		FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionStoryboard.storyboard; sourceTree = "<group>"; };
 		FC82D3811D7AC60000643C18 /* BGTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabViewController.h; sourceTree = "<group>"; };
 		FC82D3821D7AC60000643C18 /* BGTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabViewController.m; sourceTree = "<group>"; };
@@ -207,6 +223,7 @@
 		37E211621D7A9B6F00B69F54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC1876BB1D7B57A500B620FD /* Image */,
 				37E211631D7A9B6F00B69F54 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -273,9 +290,41 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+		FC1876AF1D7B4C5800B620FD /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				FC1876B01D7B4C5800B620FD /* View */,
+				FC1876B11D7B4C6E00B620FD /* BGShopListViewController.h */,
+				FC1876B21D7B4C6E00B620FD /* BGShopListViewController.m */,
+				FC1876B31D7B4C6E00B620FD /* BGShopListViewController.xib */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		FC1876B01D7B4C5800B620FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC1876B61D7B4D5200B620FD /* BGShopListCell.h */,
+				FC1876B71D7B4D5200B620FD /* BGShopListCell.m */,
+				FC1876B81D7B4D5200B620FD /* BGShopListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC1876BB1D7B57A500B620FD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BD5291D7B5EF200B608A6 /* shop_2.jpeg */,
+				FC4BD52A1D7B5EF200B608A6 /* shop_3.jpeg */,
+				FC1876BC1D7B57B400B620FD /* shop_1.jpeg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
 		FC82D37E1D7AC5AA00643C18 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				FC1876AF1D7B4C5800B620FD /* Shop */,
 				FC1876A61D7B48E400B620FD /* ZUIShare */,
 				FC82D3841D7AC6CD00643C18 /* Forum */,
 				FC82D37F1D7AC5AA00643C18 /* RootViewController */,
@@ -527,13 +576,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1876BD1D7B57B400B620FD /* shop_1.jpeg in Resources */,
 				FC82D38F1D7AC93500643C18 /* BGQuestionListViewController.xib in Resources */,
 				FC82D3891D7AC71000643C18 /* BGForumViewController.xib in Resources */,
 				FC82D58F1D7B046D00643C18 /* BGQuestionDetailViewController.xib in Resources */,
+				FC4BD52C1D7B5EF200B608A6 /* shop_3.jpeg in Resources */,
 				37E211721D7A9B6F00B69F54 /* LaunchScreen.storyboard in Resources */,
+				FC1876BA1D7B4D5200B620FD /* BGShopListCell.xib in Resources */,
+				FC1876B51D7B4C6E00B620FD /* BGShopListViewController.xib in Resources */,
 				FCD42C961D7B43FE0067B380 /* ZUIShare.storyboard in Resources */,
 				FC1876AD1D7B48E400B620FD /* ZUIShareCollectionViewCell.xib in Resources */,
 				FC82D3951D7AC9B900643C18 /* BGQuestionTableViewCell.xib in Resources */,
+				FC4BD52B1D7B5EF200B608A6 /* shop_2.jpeg in Resources */,
 				FCD42C8A1D7B21520067B380 /* BGQuestionDetailHeaderCell.xib in Resources */,
 				FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */,
 				FCD42C851D7B21440067B380 /* BGQuestionDetailCell.xib in Resources */,
@@ -598,6 +652,7 @@
 			files = (
 				FC82D57E1D7AD77900643C18 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				FC82D5841D7AF08400643C18 /* BGDataUtil.m in Sources */,
+				FC1876B91D7B4D5200B620FD /* BGShopListCell.m in Sources */,
 				FC82D5801D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				FC82D57F1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FC82D39E1D7AD11A00643C18 /* ZUISwipePageViewController.m in Sources */,
@@ -617,6 +672,7 @@
 				FC82D5921D7B0AA700643C18 /* BGQuestionModelAnimation.m in Sources */,
 				FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */,
 				FC82D5731D7AD1AA00643C18 /* RKSwipeBetweenViewControllers.m in Sources */,
+				FC1876B41D7B4C6E00B620FD /* BGShopListViewController.m in Sources */,
 				FC1876AC1D7B48E400B620FD /* ZUIShareCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

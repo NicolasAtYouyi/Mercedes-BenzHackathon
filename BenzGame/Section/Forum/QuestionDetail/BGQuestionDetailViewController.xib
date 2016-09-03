@@ -187,13 +187,13 @@
                     <exclude reference="GQF-gs-Yef"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Hye-ci-2iK"/>
-                    <exclude reference="bNF-z4-0Z9"/>
-                    <exclude reference="yI4-iI-5PU"/>
                     <exclude reference="7ja-R2-7ou"/>
                     <exclude reference="Apj-eh-GUo"/>
                     <exclude reference="Vg9-dz-6lr"/>
                     <exclude reference="jEO-Ty-qaX"/>
+                    <exclude reference="Hye-ci-2iK"/>
+                    <exclude reference="bNF-z4-0Z9"/>
+                    <exclude reference="yI4-iI-5PU"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -202,13 +202,13 @@
                     <include reference="GQF-gs-Yef"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Hye-ci-2iK"/>
-                    <include reference="bNF-z4-0Z9"/>
-                    <include reference="yI4-iI-5PU"/>
                     <include reference="7ja-R2-7ou"/>
                     <include reference="Apj-eh-GUo"/>
                     <include reference="Vg9-dz-6lr"/>
                     <include reference="jEO-Ty-qaX"/>
+                    <include reference="Hye-ci-2iK"/>
+                    <include reference="bNF-z4-0Z9"/>
+                    <include reference="yI4-iI-5PU"/>
                 </mask>
             </variation>
         </view>
