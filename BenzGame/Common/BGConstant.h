@@ -16,6 +16,8 @@ static NSString * const kMainBkgColorStr = @"44495f";
 static NSString * const kSepratorColorStr = @"efefef";
 static NSString * const kLineColorStr = @"dbdbdb";
 
+
+
 static NSString const *kTItle = @"title";
 static NSString const *kLocation = @"location";
 static NSString const *kTime = @"time";
