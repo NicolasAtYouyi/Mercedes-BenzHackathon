@@ -12,6 +12,7 @@
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "BGQuestionDetailHeaderCell.h"
 #import "BGQuestionDetailCell.h"
+#import "BenzGame-Swift.h"
 
 static NSString *const kCell = @"BGQuestionDetailCell";
 static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
@@ -19,9 +20,9 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
 @interface BGQuestionDetailViewController ()<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
-
 @property (strong, nonatomic) NSArray *answersArr;
 @property (assign, nonatomic) int itemsCount;
+@property (strong, nonatomic) ZUITranslucenceLayerModalTransition *modelTransition;
 
 @end
 
@@ -36,6 +37,8 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
     if (self.answersArr.count > 0) {
         self.itemsCount += self.answersArr.count;
     }
+    
+    self.modelTransition = [[ZUITranslucenceLayerModalTransition alloc] init];
     
 }
 
@@ -66,6 +69,24 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
 #pragma mark -Button Action
 
 - (IBAction)shareBtnAction:(id)sender {
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"ZUIShare" bundle:nil];
+    ZUIShareViewController *shareVC = [storyboard instantiateViewControllerWithIdentifier:@"ZUIShareViewController"];
+    shareVC.showCollection = false;
+    shareVC.modalPresentationStyle = UIModalPresentationCustom;
+    shareVC.transitioningDelegate = self.modelTransition;
+    [self presentViewController:shareVC animated:true completion:nil];
+    
+//    let storyboard = UIStoryboard(name: "ZUIShare", bundle: nil)
+//    let vc = storyboard.instantiateViewControllerWithIdentifier("ZUIShareViewController") as! ZUIShareViewController
+//    shareVC = vc
+//    vc.delegate = self
+//    vc.isMarked = ZUIUser.sharedInstance.collectedIdsArr.contains(pictorial!.id)
+//    
+//    vc.transitioningDelegate = modelTransition
+//    vc.modalPresentationStyle = .Custom
+//    presentViewController(vc, animated: true, completion: nil)
+
 }
 - (IBAction)collectBtnAction:(id)sender {
     if (self.collectBtn.isSelected) {
@@ -132,13 +153,13 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
     NSDictionary *dic = self.answersArr[indexPath.row - 1];
     
     cell.contentLabel.text = dic[kContent];
-    [cell.likeBtn setTitle:dic[kLikeNum] forState:UIControlStateNormal];
-    
+    [cell.likeBtn setTitle:[NSString stringWithFormat:@" %@", dic[kLikeNum]] forState:UIControlStateNormal];
     
     NSArray *userArr = [BGDataUtil sharedInstance].usersArr;
     NSDictionary *userDic = userArr[indexPath.row % userArr.count];
     cell.nameLabel.text = userDic[kUsreName];
     [cell.avatarBtn setImage:[UIImage imageNamed:userDic[kUsreAvatar]] forState:UIControlStateNormal];
+    
 }
 
 - (void)configHeaderCell:(BGQuestionDetailHeaderCell *)cell indexPath:(NSIndexPath *)indexPath {

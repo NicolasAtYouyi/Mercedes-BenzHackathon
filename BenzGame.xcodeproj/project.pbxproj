@@ -16,6 +16,10 @@
 		37E2117D1D7A9B6F00B69F54 /* BenzGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E2117C1D7A9B6F00B69F54 /* BenzGameTests.m */; };
 		37E211881D7A9B6F00B69F54 /* BenzGameUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211871D7A9B6F00B69F54 /* BenzGameUITests.m */; };
 		5F18F13A46F3B7FBAFD42582 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 496CDD1B12F8641D2F1D56A5 /* libPods.a */; };
+		FC1876A51D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1876A41D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift */; };
+		FC1876AC1D7B48E400B620FD /* ZUIShareCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1876A81D7B48E400B620FD /* ZUIShareCollectionViewCell.swift */; };
+		FC1876AD1D7B48E400B620FD /* ZUIShareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1876A91D7B48E400B620FD /* ZUIShareCollectionViewCell.xib */; };
+		FC1876AE1D7B48E400B620FD /* ZUIShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1876AB1D7B48E400B620FD /* ZUIShareViewController.swift */; };
 		FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */; };
 		FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3821D7AC60000643C18 /* BGTabViewController.m */; };
 		FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3861D7AC71000643C18 /* BGForumViewController.m */; };
@@ -39,6 +43,7 @@
 		FCD42C851D7B21440067B380 /* BGQuestionDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD42C831D7B21440067B380 /* BGQuestionDetailCell.xib */; };
 		FCD42C891D7B21520067B380 /* BGQuestionDetailHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FCD42C871D7B21520067B380 /* BGQuestionDetailHeaderCell.m */; };
 		FCD42C8A1D7B21520067B380 /* BGQuestionDetailHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCD42C881D7B21520067B380 /* BGQuestionDetailHeaderCell.xib */; };
+		FCD42C961D7B43FE0067B380 /* ZUIShare.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCD42C951D7B43FE0067B380 /* ZUIShare.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +84,10 @@
 		496CDD1B12F8641D2F1D56A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCBC5FEC29F97AF4057ED80 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B11F96E474C9D7B76335AE6D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FC1876A41D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUITranslucenceLayerModalTransition.swift; sourceTree = "<group>"; };
+		FC1876A81D7B48E400B620FD /* ZUIShareCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUIShareCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC1876A91D7B48E400B620FD /* ZUIShareCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZUIShareCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC1876AB1D7B48E400B620FD /* ZUIShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUIShareViewController.swift; sourceTree = "<group>"; };
 		FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionStoryboard.storyboard; sourceTree = "<group>"; };
 		FC82D3811D7AC60000643C18 /* BGTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabViewController.h; sourceTree = "<group>"; };
 		FC82D3821D7AC60000643C18 /* BGTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabViewController.m; sourceTree = "<group>"; };
@@ -119,6 +128,8 @@
 		FCD42C861D7B21520067B380 /* BGQuestionDetailHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGQuestionDetailHeaderCell.h; sourceTree = "<group>"; };
 		FCD42C871D7B21520067B380 /* BGQuestionDetailHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGQuestionDetailHeaderCell.m; sourceTree = "<group>"; };
 		FCD42C881D7B21520067B380 /* BGQuestionDetailHeaderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BGQuestionDetailHeaderCell.xib; sourceTree = "<group>"; };
+		FCD42C941D7B43040067B380 /* BenzGame-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BenzGame-Bridging-Header.h"; sourceTree = "<group>"; };
+		FCD42C951D7B43FE0067B380 /* ZUIShare.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZUIShare.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +183,7 @@
 		37E211611D7A9B6F00B69F54 /* BenzGame */ = {
 			isa = PBXGroup;
 			children = (
+				FCD42C941D7B43040067B380 /* BenzGame-Bridging-Header.h */,
 				FC82D5811D7AF06D00643C18 /* Data */,
 				FC82D39F1D7AD18F00643C18 /* Vendor */,
 				FC82D3961D7ACFBE00643C18 /* Common */,
@@ -186,6 +198,7 @@
 				37E211701D7A9B6F00B69F54 /* LaunchScreen.storyboard */,
 				37E211731D7A9B6F00B69F54 /* Info.plist */,
 				37E211621D7A9B6F00B69F54 /* Supporting Files */,
+				FCD42C951D7B43FE0067B380 /* ZUIShare.storyboard */,
 				FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */,
 			);
 			path = BenzGame;
@@ -234,9 +247,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC1876A61D7B48E400B620FD /* ZUIShare */ = {
+			isa = PBXGroup;
+			children = (
+				FC1876A71D7B48E400B620FD /* View */,
+				FC1876AA1D7B48E400B620FD /* ViewController */,
+			);
+			path = ZUIShare;
+			sourceTree = "<group>";
+		};
+		FC1876A71D7B48E400B620FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC1876A81D7B48E400B620FD /* ZUIShareCollectionViewCell.swift */,
+				FC1876A91D7B48E400B620FD /* ZUIShareCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FC1876AA1D7B48E400B620FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC1876AB1D7B48E400B620FD /* ZUIShareViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FC82D37E1D7AC5AA00643C18 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				FC1876A61D7B48E400B620FD /* ZUIShare */,
 				FC82D3841D7AC6CD00643C18 /* Forum */,
 				FC82D37F1D7AC5AA00643C18 /* RootViewController */,
 			);
@@ -290,6 +330,7 @@
 		FC82D3961D7ACFBE00643C18 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FC1876A41D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift */,
 				FC82D39B1D7AD10400643C18 /* PageViewController */,
 				FC82D3971D7ACFC900643C18 /* Category */,
 				FC82D5851D7B004300643C18 /* BGConstant.h */,
@@ -490,6 +531,8 @@
 				FC82D3891D7AC71000643C18 /* BGForumViewController.xib in Resources */,
 				FC82D58F1D7B046D00643C18 /* BGQuestionDetailViewController.xib in Resources */,
 				37E211721D7A9B6F00B69F54 /* LaunchScreen.storyboard in Resources */,
+				FCD42C961D7B43FE0067B380 /* ZUIShare.storyboard in Resources */,
+				FC1876AD1D7B48E400B620FD /* ZUIShareCollectionViewCell.xib in Resources */,
 				FC82D3951D7AC9B900643C18 /* BGQuestionTableViewCell.xib in Resources */,
 				FCD42C8A1D7B21520067B380 /* BGQuestionDetailHeaderCell.xib in Resources */,
 				FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */,
@@ -562,9 +605,11 @@
 				FC82D39A1D7ACFD800643C18 /* UIColor+HexColor.m in Sources */,
 				FC82D38E1D7AC93500643C18 /* BGQuestionListViewController.m in Sources */,
 				FCD42C841D7B21440067B380 /* BGQuestionDetailCell.m in Sources */,
+				FC1876AE1D7B48E400B620FD /* ZUIShareViewController.swift in Sources */,
 				37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */,
 				FC82D3941D7AC9B900643C18 /* BGQuestionTableViewCell.m in Sources */,
 				37E211641D7A9B6F00B69F54 /* main.m in Sources */,
+				FC1876A51D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift in Sources */,
 				FC82D58E1D7B046D00643C18 /* BGQuestionDetailViewController.m in Sources */,
 				FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */,
 				FCD42C891D7B21520067B380 /* BGQuestionDetailHeaderCell.m in Sources */,
@@ -572,6 +617,7 @@
 				FC82D5921D7B0AA700643C18 /* BGQuestionModelAnimation.m in Sources */,
 				FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */,
 				FC82D5731D7AD1AA00643C18 /* RKSwipeBetweenViewControllers.m in Sources */,
+				FC1876AC1D7B48E400B620FD /* ZUIShareCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -718,6 +764,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BenzGame/BenzGame-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -731,6 +778,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = benz.com.BenzGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BenzGame/BenzGame-Bridging-Header.h";
 			};
 			name = Release;
 		};

@@ -65,11 +65,19 @@
     // Configure the view for the selected state
 }
 - (IBAction)likeBtnAction:(id)sender {
+    NSString *countStr = [self.likeBtn titleForState:UIControlStateNormal];
+    NSInteger count = 1;
+    if (countStr.integerValue > 0) {
+        count = countStr.integerValue;
+    }
     if (self.likeBtn.isSelected) {
         [self.likeBtn setImage:[UIImage imageNamed:@"up"] forState:UIControlStateNormal];
+        count --;
     } else {
         [self.likeBtn setImage:[UIImage imageNamed:@"up_selected"] forState:UIControlStateNormal];
+        count ++;
     }
+    [self.likeBtn setTitle:[NSString stringWithFormat:@" %ld", count] forState:UIControlStateNormal];
     [self.likeBtn setSelected:!self.likeBtn.isSelected];
 }
 
