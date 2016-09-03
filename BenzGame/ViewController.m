@@ -20,6 +20,7 @@
     
     
     NSLog(@"%@", test);
+    NSLog(@"test");
 }
 
 - (void)didReceiveMemoryWarning {
