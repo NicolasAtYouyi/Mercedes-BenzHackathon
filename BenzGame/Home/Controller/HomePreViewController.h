@@ -12,5 +12,4 @@
 @interface HomePreViewController : UICollectionViewController
 
 
-
 @end

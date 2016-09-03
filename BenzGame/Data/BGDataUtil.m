@@ -29,6 +29,9 @@
                                @{@"id":@1, @"name": @"洛奇", @"avatar": @"avatar_1", @"level": @1, @"identity": @1},
                                @{@"id":@1, @"name": @"查尔斯", @"avatar": @"avatar_1", @"level": @1, @"identity": @1}];
         
+        
+        singleton.shopListArr = @[@{@"name":@"G-Klasse,G500",@"price":@"¥2,318,000",@"country":@1},
+                                  @{@"name":@"GLA-Class 2013,CLA 250 4MATIC",@"price":@"¥2,318,000",@"country":@2}];
     }
     return singleton;
 }

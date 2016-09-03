@@ -76,13 +76,13 @@
                                 <action selector="shareBtnAction:" destination="-1" eventType="touchUpInside" id="ktr-82-QTx"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zu-5z-T1Z">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zu-5z-T1Z">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="44" id="TP8-5x-PrI"/>
                                 <constraint firstAttribute="width" constant="44" id="o0C-l8-TOQ"/>
                             </constraints>
-                            <state key="normal" title="收藏"/>
+                            <state key="normal" image="collect"/>
                             <variation key="default">
                                 <mask key="constraints">
                                     <exclude reference="TP8-5x-PrI"/>
@@ -187,13 +187,13 @@
                     <exclude reference="GQF-gs-Yef"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="Hye-ci-2iK"/>
-                    <exclude reference="bNF-z4-0Z9"/>
-                    <exclude reference="yI4-iI-5PU"/>
                     <exclude reference="7ja-R2-7ou"/>
                     <exclude reference="Apj-eh-GUo"/>
                     <exclude reference="Vg9-dz-6lr"/>
                     <exclude reference="jEO-Ty-qaX"/>
+                    <exclude reference="Hye-ci-2iK"/>
+                    <exclude reference="bNF-z4-0Z9"/>
+                    <exclude reference="yI4-iI-5PU"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -202,18 +202,19 @@
                     <include reference="GQF-gs-Yef"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="Hye-ci-2iK"/>
-                    <include reference="bNF-z4-0Z9"/>
-                    <include reference="yI4-iI-5PU"/>
                     <include reference="7ja-R2-7ou"/>
                     <include reference="Apj-eh-GUo"/>
                     <include reference="Vg9-dz-6lr"/>
                     <include reference="jEO-Ty-qaX"/>
+                    <include reference="Hye-ci-2iK"/>
+                    <include reference="bNF-z4-0Z9"/>
+                    <include reference="yI4-iI-5PU"/>
                 </mask>
             </variation>
         </view>
     </objects>
     <resources>
+        <image name="collect" width="18" height="17"/>
         <image name="icon_back_normal" width="8" height="14"/>
     </resources>
 </document>

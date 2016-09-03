@@ -10,4 +10,5 @@
 
 @interface BaseController : UIViewController
 
+- (void)initTabBar;
 @end

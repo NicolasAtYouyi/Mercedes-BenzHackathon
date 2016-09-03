@@ -130,6 +130,9 @@
     self.dataArray = @[@"我的问题", @"我的回答", @"我的收藏", @"个人信用认证", @"绑定身份"];
 
 }
+- (void)initTabBar{
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"活动" image:[UIImage imageNamed:@"icon_me"] selectedImage:[UIImage imageNamed:@"icon_me_checked"]];
+}
 
 - (void)initUI {
     

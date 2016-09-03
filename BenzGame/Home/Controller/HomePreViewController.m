@@ -43,6 +43,8 @@ static NSString * const reuseIdentifier = @"Cell";
     [self loadData];
 }
 
+
+
 - (void)loadAction:(NSNotification *)notification {
     
     NSInteger index = [notification.object[@"index"] integerValue];

@@ -10,4 +10,6 @@
 
 @interface MineViewController : UIViewController
 
+- (void)initTabBar;
+
 @end

@@ -32,7 +32,7 @@
 
 - (void)initTabBar{
     
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"论坛" image:[UIImage imageNamed:@""] selectedImage:[UIImage imageNamed:@""]];
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"论坛" image:[UIImage imageNamed:@"icon_qa"] selectedImage:[UIImage imageNamed:@"icon_qa_checked"]];
 //    tabBarItem = UITabBarItem.init(title: "画报", image: UIImage.init(named: "bottombar_magazine_unselected"), tag: 0)
 //    tabBarItem.selectedImage = UIImage.init(named: "bottombar_magazine_selected")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysOriginal)
 //    tabBarItem.titlePositionAdjustment = UIOffset.init(horizontal: 0, vertical: -4)

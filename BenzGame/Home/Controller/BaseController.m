@@ -151,6 +151,11 @@
     frontView.contentSize = CGSizeMake(frontView.frame.size.width * count, frontView.frame.size.height);
 }
 
+- (void)initTabBar{
+    
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"活动" image:[UIImage imageNamed:@"icon_project"] selectedImage:[UIImage imageNamed:@"icon_project_checked"]];
+}
+
 - (void)scrollViewTapAction:(UITapGestureRecognizer *)tap {
     
     UIScrollView *scrollView = (UIScrollView *)tap.view;

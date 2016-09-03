@@ -31,52 +31,9 @@
         BGQuestionListViewController *fromVC = (BGQuestionListViewController *) [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
         
         
-//        UIImage *blurredImage;
-//        if ([fromVC isKindOfClass:[CDCollectionViewController class]]) {
-//            CDCollectionViewCell *cell = fromVC.collectionView.visibleCells.firstObject;
-//            blurredImage = cell.bkgImageView.image;
-//        }
-//        else if ([fromVC isKindOfClass:[UINavigationController class]]) {
-//            fromVC = (CDCollectionViewController *)((UINavigationController *)fromVC).topViewController;
-//        }
-//        
-//        CDCollectionViewCell *cell = fromVC.collectionView.visibleCells.firstObject;
-//        blurredImage = cell.bkgImageView.image;
-//        toVC.bkgImageView.image = blurredImage;
-//        toVC.bkgImageView.contentMode = UIViewContentModeScaleAspectFill;
-//        
         //Animation
         [[transitionContext containerView] addSubview:toVC.view];
-        toVC.titleView.alpha = 0.0;
-//        toVC.bkgImageView.hidden = YES;
-        
-//        
-//        NSArray *array = [NSArray arrayWithObjects:toVC.viewEdit,toVC.viewDownLoad,toVC.viewDelete,toVC.viewShare,toVC.viewAdd, nil];
-//        for (int i=0; i<array.count; i++) {
-//            UIView *v = array[i];
-//            
-//            NSTimeInterval delay = i * 0.06f;
-//            
-//            v.alpha = 0.2f;
-//            [v setTransform:CGAffineTransformMakeScale(1.5, 1.5f)];
-//            
-//            CGPoint originalCenter  = v.center;
-//            v.center = CGPointMake(originalCenter.x-300.0f, originalCenter.y-10.0f);
-//            
-//            [UIView animateWithDuration:0.8
-//                                  delay:delay
-//                 usingSpringWithDamping:0.8
-//                  initialSpringVelocity:0.3
-//                                options:UIViewAnimationOptionCurveEaseIn
-//                             animations:^{
-//                                 v.alpha = 1.0f;
-//                                 [v setTransform:CGAffineTransformMakeScale(1.0, 1.0f)];
-//                                 v.center = originalCenter;
-//                             }
-//                             completion:^(BOOL finished) {
-//                             }];
-//        }
-//        
+        toVC.backBtn.alpha = 0.0;
         
         CAShapeLayer *layer = [[CAShapeLayer alloc] init];
         layer.path = [self pathsType:YES];
@@ -85,92 +42,39 @@
         [layer addAnimation:[self scalingAnimation:[self pathsType:NO]] forKey:nil];
         
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-            toVC.titleView.alpha = 1.0;
-//            layer.path = [self pathsType:NO];
+            toVC.backBtn.alpha = 1.0;
+            fromVC.view.alpha = 0.8;
             
         } completion:^(BOOL finished) {
-//            toVC.bkgImageView.hidden = NO;
-//            
-//            fromVC.view.alpha = 1.0f;
-//            cell.shadowView.alpha = 1.0f;
-//            cell.titleShadowView.alpha = 1.0f;
-//            fromVC.labelContentView.alpha = 1.0f;
-//            fromVC.shadowView.alpha = 1.0f;
-            
+            fromVC.view.alpha = 1.0;
             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
         }];
         
     }
     //Back to cover VC
     else {
+        BGQuestionDetailViewController *fromVC = (BGQuestionDetailViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+        BGQuestionListViewController *toVC = (BGQuestionListViewController *) [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
         
-//        CDShareViewController *fromVC = (CDShareViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
-//        CDCollectionViewController *toVC = (CDCollectionViewController *) [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-//        
-//        
-//        [[transitionContext containerView] addSubview:toVC.view];
-//        [[transitionContext containerView] sendSubviewToBack:toVC.view];
-//        fromVC.bkgImageView.hidden = YES;
-//        // 2. Set init frame for toVC
-//        CGRect screenBounds = [[UIScreen mainScreen] bounds];
-//        CGRect finalFrame = [transitionContext finalFrameForViewController:toVC];
-//        finalFrame = CGRectOffset(finalFrame, -screenBounds.size.height, 0);
-//        
-//        CDCollectionViewCell *cell;
-//        if ([toVC isKindOfClass:[UINavigationController class]]) {
-//            CDCollectionViewController *vc = (CDCollectionViewController *)((UINavigationController *)toVC).topViewController;
-//            cell = vc.collectionView.visibleCells.firstObject;
-//            toVC = vc;
-//        }
-//        else {
-//            cell = toVC.collectionView.visibleCells.firstObject;
-//        }
-//        
-//        NSArray *array = [NSArray arrayWithObjects:fromVC.viewEdit,fromVC.viewDownLoad,fromVC.viewDelete,fromVC.viewShare,fromVC.viewAdd, nil];
-//        for (int i=0; i<array.count; i++) {
-//            UIView *v = array[i];
-//            
-//            NSTimeInterval delay = i * 0.06f;
-//            
-//            [v setTransform:CGAffineTransformMakeScale(1.0f, 1.0f)];
-//            
-//            CGPoint originalCenter  = v.center;
-//            
-//            
-//            [UIView animateWithDuration:0.5
-//                                  delay:delay
-//                 usingSpringWithDamping:0.8
-//                  initialSpringVelocity:0.3
-//                                options:UIViewAnimationOptionCurveEaseIn
-//                             animations:^{
-//                                 v.alpha = 0.2f;
-//                                 v.center = CGPointMake(originalCenter.x-300.0f, originalCenter.y-10.0f);
-//                             }
-//                             completion:^(BOOL finished) {
-//                             }];
-//        }
-//        
-//        
-//        toVC.view.alpha = 0.5f;
-//        toVC.labelContentView.alpha = 0.0f;
-//        toVC.shadowView.alpha = 0.0f;
-//        cell.shadowView.alpha = 0.0f;
-//        cell.titleShadowView.alpha = 0.0f;
-//        
-//        [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:.3f options:UIViewAnimationOptionCurveEaseIn
-//                         animations:^{
-//                             fromVC.bkgImageView.alpha = 1.0f;
-//                             
-//                             toVC.view.alpha = 1.0f;
-//                             cell.shadowView.alpha = 1.0f;
-//                             cell.titleShadowView.alpha = 1.0f;
-//                             toVC.labelContentView.alpha = 1.0f;
-//                             toVC.shadowView.alpha = 1.0f;
-//                         } completion:^(BOOL finished) {
-//                             [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
-//                         }];
-    }
+        
+        //Animation
+        [[transitionContext containerView] insertSubview:toVC.view atIndex:0];
+        
+        CAShapeLayer *layer = [[CAShapeLayer alloc] init];
+        layer.path = [self pathsType:NO];
+        fromVC.view.layer.mask = layer;
+        fromVC.view.clipsToBounds = YES;
+        [layer addAnimation:[self scalingAnimation:[self pathsType:YES]] forKey:nil];
+        
+        [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+            fromVC.view.alpha = 0.8;
+            
+        } completion:^(BOOL finished) {
+            fromVC.view.alpha = 1.0;
+            [transitionContext completeTransition:![transitionContext transitionWasCancelled]];
+        }];
 
+    }
     
 }
 

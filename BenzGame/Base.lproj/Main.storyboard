@@ -8,7 +8,7 @@
         <!--Base Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BaseController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BaseController" id="BYZ-38-t0r" customClass="BaseController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,12 +41,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eyf-cb-wRH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743" y="888"/>
+            <point key="canvasLocation" x="202.5" y="800"/>
         </scene>
         <!--Mine View Controller-->
         <scene sceneID="NXG-3Q-hRp">
             <objects>
-                <viewController id="rnf-qH-0pc" customClass="MineViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MineViewController" id="rnf-qH-0pc" customClass="MineViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0fO-pO-VAK"/>
                         <viewControllerLayoutGuide type="bottom" id="OyX-BR-0Vp"/>
@@ -78,7 +78,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yO6-Td-ux9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71" y="902"/>
+            <point key="canvasLocation" x="-541.5" y="910"/>
         </scene>
         <!--Item-->
         <scene sceneID="Tjq-Wj-TrQ">
