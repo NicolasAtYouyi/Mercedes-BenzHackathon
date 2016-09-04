@@ -9,7 +9,7 @@
 #import "BaseController.h"
 #import "HomePreViewController.h"
 #import "HomePreViewFlowLayout.h"
-
+#import "BGConstant.h"
 
 @interface BaseController () <UIScrollViewDelegate> {
     HomePreViewController *homePreViewVC;
@@ -128,19 +128,28 @@
 //    [rightButton setTitleColor:MainBGColor forState:(UIControlStateNormal)];
 //    [self.view addSubview:rightButton];
     
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 50)];
-    topView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:.5];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, 64)];
+    topView.backgroundColor = [UIColor clearColor];
     
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"qa_location"]];
-    imageView.frame = CGRectMake(ScreenWidth / 2. - 60 / 2., 25, 10, 15);
+//    imageView.frame = CGRectMake(ScreenWidth / 2. - 60 / 2., 25, 10, 15);
+    imageView.frame = CGRectMake(18, 20 + 25, 10, 15);
+    imageView.contentMode = UIViewContentModeCenter;
     [topView addSubview:imageView];
     
-    UILabel *addLabel = [[UILabel alloc] initWithFrame:CGRectMake(ScreenWidth / 2. - 30 / 2., 20, 40, 25)];
+    UILabel *addLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 25)];
+    addLabel.center = CGPointMake(imageView.center.x + 25, imageView.center.y);
     addLabel.textAlignment = NSTextAlignmentCenter;
     addLabel.text = @"北京";
+    addLabel.font = [UIFont fontWithName:kFontName size:14];
+    addLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.8];
     [topView addSubview:addLabel];
     
     [self.view addSubview:topView];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return  UIStatusBarStyleLightContent;
 }
 
 - (void)freshContentSize:(NSNotification *)notification {

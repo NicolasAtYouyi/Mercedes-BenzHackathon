@@ -7,6 +7,7 @@
 //
 
 #import "HomePreViewCell.h"
+#import "BGConstant.h"
 
 @interface HomePreViewCell ()
 
@@ -33,15 +34,18 @@
     
     
     self.smallLabel.text = @"强劲本质";
-    self.smallLabel.font = [UIFont fontWithName:@"Helvetica-BoldOblique" size:38 / 2.];
-    self.addressLabel.text  = @"中国北京";
+    self.smallLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.9];
+    self.smallLabel.font = [UIFont fontWithName:kFontName size:16.];
+    self.addressLabel.text  = @" 中国北京";
     self.addressLabel.textColor = WhiteColor;
-    self.addressLabel.font = [UIFont systemFontOfSize:SmallSize];
+    self.addressLabel.font = [UIFont fontWithName:kFontName size:11.];
     self.dateLabel.text = @"2016.05.03";
     self.dateLabel.textColor = WhiteColor;
-    self.dateLabel.font = [UIFont systemFontOfSize:SmallSize];
+    self.dateLabel.font = [UIFont fontWithName:kFontName size:11.];
     self.contentLabel.text = @"和故事空格键开关可看过就阿里过奖了十几个垃圾啊老规矩";
     self.contentLabel.numberOfLines = 0;
+    self.contentLabel.font = [UIFont fontWithName:kFontName size:13.];
+    self.contentLabel.textColor = [[UIColor blackColor] colorWithAlphaComponent:0.85];
     
     self.timeLabel.hidden = YES;
     self.line.hidden = YES;

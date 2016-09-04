@@ -155,6 +155,8 @@ static NSString *const kHeaderCell = @"BGQuestionDetailHeaderCell";
     cell.contentLabel.text = dic[kContent];
     [cell.likeBtn setTitle:[NSString stringWithFormat:@" %@", dic[kLikeNum]] forState:UIControlStateNormal];
     
+    [cell.commentBtn setTitle:[NSString stringWithFormat:@" %@", dic[kLikeNum]] forState:UIControlStateNormal];
+    
     NSArray *userArr = [BGDataUtil sharedInstance].usersArr;
     NSDictionary *userDic = userArr[indexPath.row % userArr.count];
     cell.nameLabel.text = userDic[kUsreName];
