@@ -22,7 +22,7 @@
 
 @property (strong, nonatomic) UIImageView *wishListAnimationImgView;
 
-@property (strong, nonatomic) ZUITranslucenceLayerModalTransition * modelTransition;
+
 
 @end
 
@@ -32,9 +32,6 @@
     [super viewDidLoad];
     
     [self setupTableView];
-    
-    
-    self.modelTransition = [[ZUITranslucenceLayerModalTransition alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,13 +107,8 @@
 //    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
     
     
-    
-    UIStoryboard *story = [UIStoryboard storyboardWithName:@"QuestionStoryboard" bundle:nil];
-    UIViewController *detail = [story instantiateViewControllerWithIdentifier:@"BGGitViewController"];
-    detail.modalPresentationStyle = UIModalPresentationCustom;
-    detail.transitioningDelegate = self.modelTransition;
-    [self presentViewController:detail animated:true completion:nil];
-    
+    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
+    [self.navigationController showViewController:shopDetailVC sender:nil];
 }
 - (void)configCell:(BGShopListCell *)cell indexPath:(NSIndexPath *)indexPath {
     
