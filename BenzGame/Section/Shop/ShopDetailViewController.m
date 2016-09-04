@@ -81,7 +81,7 @@
         _pageControl.numberOfPages = imageNum;
         _pageControl.pageIndicatorTintColor = [WhiteColor colorWithAlphaComponent:.5];
         _pageControl.currentPageIndicatorTintColor = WhiteColor;
-        [self.topScrollview addSubview:_pageControl];
+        [self.baseScrollview addSubview:_pageControl];
     }
     return _pageControl;
 }
