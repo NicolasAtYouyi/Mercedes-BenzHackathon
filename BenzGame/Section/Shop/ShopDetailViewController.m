@@ -8,6 +8,7 @@
 
 #import "ShopDetailViewController.h"
 #import "LookCarViewController.h"
+#import "BenzGame-Swift.h"
 
 @interface ShopDetailViewController () <UIScrollViewDelegate> {
     NSInteger imageNum;
@@ -16,22 +17,26 @@
 @property (strong, nonatomic) UIScrollView *baseScrollview;
 @property (strong, nonatomic) UIScrollView *topScrollview;
 @property (strong, nonatomic) UIPageControl *pageControl;
-
+@property (strong, nonatomic) ZUITranslucenceLayerModalTransition * modelTransition;
 
 @end
 
 @implementation ShopDetailViewController
 
-static NSString * const kFontName = @"PingFang SC";
-
 - (BOOL)prefersStatusBarHidden {
     return YES; // 返回NO表示要显示，返回YES将hiden
 }
+
+//- (UIStatusBarStyle)preferredStatusBarStyle {
+//    return UIStatusBarStyleLightContent;
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = WhiteColor;
+    
+    self.modelTransition = [[ZUITranslucenceLayerModalTransition alloc] init];
     
     imageNum = 4;
     self.topScrollview.contentSize = CGSizeMake(ScreenWidth * imageNum, CGRectGetHeight(self.topScrollview.frame));
@@ -143,7 +148,12 @@ static NSString * const kFontName = @"PingFang SC";
 }
 
 - (void)getTheData {
-    NSLog(@"获取参数");
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"QuestionStoryboard" bundle:nil];
+    UIViewController *detail = [story instantiateViewControllerWithIdentifier:@"BGGitViewController"];
+    detail.modalPresentationStyle = UIModalPresentationCustom;
+    detail.transitioningDelegate = self.modelTransition;
+    [self presentViewController:detail animated:true completion:nil];
 }
 
 - (void)questionAction {

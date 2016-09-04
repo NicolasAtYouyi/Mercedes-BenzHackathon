@@ -64,8 +64,12 @@ iOSInjectionProject/
 
 .DS_Store
 
+<<<<<<< HEAD
+Podfile.lock
+=======
 .DS_Store
 
 .DS_Store
 
 .DS_Store
+>>>>>>> NicolasAtYouyi/master

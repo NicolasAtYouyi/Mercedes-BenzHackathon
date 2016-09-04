@@ -11,6 +11,7 @@
 #import "BGShopListCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "ShopDetailViewController.h"
+#import "BenzGame-Swift.h"
 
 @interface BGShopListViewController ()<UITableViewDataSource, UITableViewDelegate, BGShopListCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *titleView;
@@ -19,7 +20,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *wishListBtn;
 
-@property (strong, nonnull) UIImageView *wishListAnimationImgView;
+@property (strong, nonatomic) UIImageView *wishListAnimationImgView;
+
+
 
 @end
 
@@ -100,6 +103,10 @@
 //        [tableView deselectRowAtIndexPath:indexPath animated:NO];
 //    }];
 
+//    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
+//    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
+    
+    
     ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
     [self.navigationController showViewController:shopDetailVC sender:nil];
 }
@@ -132,7 +139,7 @@
     
     UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 80.0, 80.0)];
     img.center = center;
-    img.backgroundColor = [UIColor redColor];
+    img.image = [UIImage imageNamed:@"icon_heart"];
     img.transform = CGAffineTransformMakeScale(0.2, 0.2);
     self.wishListAnimationImgView = img;
     [self.view addSubview:img];
