@@ -59,14 +59,15 @@
                                 <constraint firstAttribute="width" constant="44" id="6W6-RK-Pbi"/>
                                 <constraint firstAttribute="height" constant="44" id="uzK-6c-syU"/>
                             </constraints>
-                            <state key="normal" title="分享"/>
+                            <state key="normal" image="icon_share"/>
                             <variation key="default">
                                 <mask key="constraints">
                                     <exclude reference="6W6-RK-Pbi"/>
                                     <exclude reference="uzK-6c-syU"/>
                                 </mask>
                             </variation>
-                            <variation key="heightClass=regular-widthClass=compact">
+                            <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                <rect key="frame" x="369" y="31" width="18" height="22"/>
                                 <mask key="constraints">
                                     <include reference="6W6-RK-Pbi"/>
                                     <include reference="uzK-6c-syU"/>
@@ -216,5 +217,6 @@
     <resources>
         <image name="collect" width="18" height="17"/>
         <image name="icon_back_normal" width="8" height="14"/>
+        <image name="icon_share" width="18" height="17"/>
     </resources>
 </document>
