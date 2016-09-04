@@ -44,6 +44,8 @@
 		FC4BD5531D7B817D00B608A6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD54C1D7B817D00B608A6 /* 7.jpg */; };
 		FC4BD5551D7B855400B608A6 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD5541D7B855400B608A6 /* Questions.plist */; };
 		FC4BD55F1D7B9D8700B608A6 /* BGActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD55D1D7B9D8700B608A6 /* BGActivityDetailViewController.swift */; };
+		FC4BD5641D7BBD9700B608A6 /* BGGitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD5621D7BBD9700B608A6 /* BGGitViewController.swift */; };
+		FC4BD5691D7BC9BB00B608A6 /* contrast.gif in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD5681D7BC9BB00B608A6 /* contrast.gif */; };
 		FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */; };
 		FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3821D7AC60000643C18 /* BGTabViewController.m */; };
 		FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3861D7AC71000643C18 /* BGForumViewController.m */; };
@@ -145,6 +147,8 @@
 		FC4BD54C1D7B817D00B608A6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		FC4BD5541D7B855400B608A6 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
 		FC4BD55D1D7B9D8700B608A6 /* BGActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGActivityDetailViewController.swift; sourceTree = "<group>"; };
+		FC4BD5621D7BBD9700B608A6 /* BGGitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGGitViewController.swift; sourceTree = "<group>"; };
+		FC4BD5681D7BC9BB00B608A6 /* contrast.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = contrast.gif; sourceTree = "<group>"; };
 		FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionStoryboard.storyboard; sourceTree = "<group>"; };
 		FC82D3811D7AC60000643C18 /* BGTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabViewController.h; sourceTree = "<group>"; };
 		FC82D3821D7AC60000643C18 /* BGTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabViewController.m; sourceTree = "<group>"; };
@@ -273,6 +277,7 @@
 		37E211621D7A9B6F00B69F54 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FC4BD5681D7BC9BB00B608A6 /* contrast.gif */,
 				FC4BD5541D7B855400B608A6 /* Questions.plist */,
 				FC1876BB1D7B57A500B620FD /* Image */,
 				37E211631D7A9B6F00B69F54 /* main.m */,
@@ -432,9 +437,18 @@
 			name = ActivityDetail;
 			sourceTree = "<group>";
 		};
+		FC4BD5611D7BBD6F00B608A6 /* BGGif */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BD5621D7BBD9700B608A6 /* BGGitViewController.swift */,
+			);
+			path = BGGif;
+			sourceTree = "<group>";
+		};
 		FC82D37E1D7AC5AA00643C18 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				FC4BD5611D7BBD6F00B608A6 /* BGGif */,
 				FC4BD5571D7B9AB600B608A6 /* ActivityDetail */,
 				FC4BD5401D7B80DA00B608A6 /* Mine */,
 				FC4BD52D1D7B80CE00B608A6 /* Home */,
@@ -705,6 +719,7 @@
 				FCD42C961D7B43FE0067B380 /* ZUIShare.storyboard in Resources */,
 				FC4BD5531D7B817D00B608A6 /* 7.jpg in Resources */,
 				FC1876AD1D7B48E400B620FD /* ZUIShareCollectionViewCell.xib in Resources */,
+				FC4BD5691D7BC9BB00B608A6 /* contrast.gif in Resources */,
 				FC4BD54F1D7B817D00B608A6 /* 3.jpg in Resources */,
 				FC82D3951D7AC9B900643C18 /* BGQuestionTableViewCell.xib in Resources */,
 				FC4BD52B1D7B5EF200B608A6 /* shop_2.jpeg in Resources */,
@@ -777,6 +792,7 @@
 				FC82D57E1D7AD77900643C18 /* UITableView+FDKeyedHeightCache.m in Sources */,
 				FC82D5841D7AF08400643C18 /* BGDataUtil.m in Sources */,
 				FC1876B91D7B4D5200B620FD /* BGShopListCell.m in Sources */,
+				FC4BD5641D7BBD9700B608A6 /* BGGitViewController.swift in Sources */,
 				FC82D5801D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				FC4BD53F1D7B80CE00B608A6 /* HomePreViewFlowLayout.m in Sources */,
 				37E1C49A1D7B8FBE009AE7EC /* ShopDetailViewController.m in Sources */,

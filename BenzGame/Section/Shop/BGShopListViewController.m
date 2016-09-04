@@ -11,6 +11,7 @@
 #import "BGShopListCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
 #import "ShopDetailViewController.h"
+#import "BenzGame-Swift.h"
 
 @interface BGShopListViewController ()<UITableViewDataSource, UITableViewDelegate, BGShopListCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *titleView;
@@ -19,7 +20,9 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIButton *wishListBtn;
 
-@property (strong, nonnull) UIImageView *wishListAnimationImgView;
+@property (strong, nonatomic) UIImageView *wishListAnimationImgView;
+
+@property (strong, nonatomic) ZUITranslucenceLayerModalTransition * modelTransition;
 
 @end
 
@@ -29,6 +32,9 @@
     [super viewDidLoad];
     
     [self setupTableView];
+    
+    
+    self.modelTransition = [[ZUITranslucenceLayerModalTransition alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,8 +106,17 @@
 //        [tableView deselectRowAtIndexPath:indexPath animated:NO];
 //    }];
 
-    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
-    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
+//    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
+//    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
+    
+    
+    
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"QuestionStoryboard" bundle:nil];
+    UIViewController *detail = [story instantiateViewControllerWithIdentifier:@"BGGitViewController"];
+    detail.modalPresentationStyle = UIModalPresentationCustom;
+    detail.transitioningDelegate = self.modelTransition;
+    [self presentViewController:detail animated:true completion:nil];
+    
 }
 - (void)configCell:(BGShopListCell *)cell indexPath:(NSIndexPath *)indexPath {
     
@@ -132,7 +147,7 @@
     
     UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, 80.0, 80.0)];
     img.center = center;
-    img.backgroundColor = [UIColor redColor];
+    img.image = [UIImage imageNamed:@"icon_heart"];
     img.transform = CGAffineTransformMakeScale(0.2, 0.2);
     self.wishListAnimationImgView = img;
     [self.view addSubview:img];

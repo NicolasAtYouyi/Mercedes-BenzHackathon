@@ -40,6 +40,82 @@
             </objects>
             <point key="canvasLocation" x="-66" y="34"/>
         </scene>
+        <!--Git View Controller-->
+        <scene sceneID="p7M-KX-sEM">
+            <objects>
+                <viewController storyboardIdentifier="BGGitViewController" id="SDw-Z7-mbw" customClass="BGGitViewController" customModule="BenzGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pFt-A2-MjS"/>
+                        <viewControllerLayoutGuide type="bottom" id="UFE-Y9-WJK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qZq-tW-ZA0">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwo-M4-oDl">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="335" id="cNa-Xv-rVu"/>
+                                    <constraint firstAttribute="width" constant="1160" id="gvm-Rz-Lnw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cNa-Xv-rVu"/>
+                                        <exclude reference="gvm-Rz-Lnw"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="cNa-Xv-rVu"/>
+                                        <exclude reference="gvm-Rz-Lnw"/>
+                                    </mask>
+                                </variation>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dwo-M4-oDl" firstAttribute="leading" secondItem="qZq-tW-ZA0" secondAttribute="leading" constant="10" id="T6g-lH-s3k"/>
+                            <constraint firstItem="dwo-M4-oDl" firstAttribute="centerY" secondItem="qZq-tW-ZA0" secondAttribute="centerY" id="fus-cW-L6v"/>
+                            <constraint firstItem="UFE-Y9-WJK" firstAttribute="top" secondItem="dwo-M4-oDl" secondAttribute="bottom" constant="20" id="mcK-aF-KGS"/>
+                            <constraint firstAttribute="trailing" secondItem="dwo-M4-oDl" secondAttribute="trailing" constant="10" id="oYc-KM-Qhu"/>
+                            <constraint firstItem="dwo-M4-oDl" firstAttribute="centerX" secondItem="qZq-tW-ZA0" secondAttribute="centerX" id="qKJ-qm-0LQ"/>
+                            <constraint firstItem="dwo-M4-oDl" firstAttribute="top" secondItem="pFt-A2-MjS" secondAttribute="bottom" constant="20" id="uiP-pC-hYY"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dwo-M4-oDl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="T6g-lH-s3k"/>
+                                <exclude reference="fus-cW-L6v"/>
+                                <exclude reference="oYc-KM-Qhu"/>
+                                <exclude reference="qKJ-qm-0LQ"/>
+                                <exclude reference="uiP-pC-hYY"/>
+                                <exclude reference="mcK-aF-KGS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="dwo-M4-oDl"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="T6g-lH-s3k"/>
+                                <exclude reference="fus-cW-L6v"/>
+                                <include reference="oYc-KM-Qhu"/>
+                                <exclude reference="qKJ-qm-0LQ"/>
+                                <include reference="uiP-pC-hYY"/>
+                                <include reference="mcK-aF-KGS"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="dwo-M4-oDl" id="n2p-0L-pPR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Seu-7t-QJE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="459" y="90.75"/>
+        </scene>
         <!--Activity Detail View Controller-->
         <scene sceneID="bNM-me-zii">
             <objects>
