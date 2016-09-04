@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37E1C49A1D7B8FBE009AE7EC /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */; };
 		37E211641D7A9B6F00B69F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211631D7A9B6F00B69F54 /* main.m */; };
 		37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211661D7A9B6F00B69F54 /* AppDelegate.m */; };
 		37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211691D7A9B6F00B69F54 /* ViewController.m */; };
@@ -88,6 +89,8 @@
 
 /* Begin PBXFileReference section */
 		37CEDDC51D7AB02D00633388 /* Benz.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Benz.pch; sourceTree = "<group>"; };
+		37E1C4981D7B8FBE009AE7EC /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
+		37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
 		37E2115F1D7A9B6F00B69F54 /* BenzGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BenzGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37E211631D7A9B6F00B69F54 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		37E211651D7A9B6F00B69F54 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -336,6 +339,8 @@
 				FC1876B11D7B4C6E00B620FD /* BGShopListViewController.h */,
 				FC1876B21D7B4C6E00B620FD /* BGShopListViewController.m */,
 				FC1876B31D7B4C6E00B620FD /* BGShopListViewController.xib */,
+				37E1C4981D7B8FBE009AE7EC /* ShopDetailViewController.h */,
+				37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -774,6 +779,7 @@
 				FC1876B91D7B4D5200B620FD /* BGShopListCell.m in Sources */,
 				FC82D5801D7AD77900643C18 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
 				FC4BD53F1D7B80CE00B608A6 /* HomePreViewFlowLayout.m in Sources */,
+				37E1C49A1D7B8FBE009AE7EC /* ShopDetailViewController.m in Sources */,
 				FC82D57F1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FC82D39E1D7AD11A00643C18 /* ZUISwipePageViewController.m in Sources */,
 				FC4BD55F1D7B9D8700B608A6 /* BGActivityDetailViewController.swift in Sources */,
