@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37BD05D51D7BC8EF00D3D1AC /* LookCarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BD05D41D7BC8EF00D3D1AC /* LookCarViewController.m */; };
 		37E1C49A1D7B8FBE009AE7EC /* ShopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */; };
 		37E211641D7A9B6F00B69F54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211631D7A9B6F00B69F54 /* main.m */; };
 		37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E211661D7A9B6F00B69F54 /* AppDelegate.m */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37BD05D31D7BC8EF00D3D1AC /* LookCarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookCarViewController.h; sourceTree = "<group>"; };
+		37BD05D41D7BC8EF00D3D1AC /* LookCarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookCarViewController.m; sourceTree = "<group>"; };
 		37CEDDC51D7AB02D00633388 /* Benz.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Benz.pch; sourceTree = "<group>"; };
 		37E1C4981D7B8FBE009AE7EC /* ShopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopDetailViewController.h; sourceTree = "<group>"; };
 		37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopDetailViewController.m; sourceTree = "<group>"; };
@@ -341,6 +344,8 @@
 				FC1876B31D7B4C6E00B620FD /* BGShopListViewController.xib */,
 				37E1C4981D7B8FBE009AE7EC /* ShopDetailViewController.h */,
 				37E1C4991D7B8FBE009AE7EC /* ShopDetailViewController.m */,
+				37BD05D31D7BC8EF00D3D1AC /* LookCarViewController.h */,
+				37BD05D41D7BC8EF00D3D1AC /* LookCarViewController.m */,
 			);
 			path = Shop;
 			sourceTree = "<group>";
@@ -598,6 +603,7 @@
 				37E2115C1D7A9B6F00B69F54 /* Frameworks */,
 				37E2115D1D7A9B6F00B69F54 /* Resources */,
 				1D91A58C1C929BD5DE933004 /* Copy Pods Resources */,
+				100539B79A26620DD29098C8 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -737,6 +743,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		100539B79A26620DD29098C8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1D91A58C1C929BD5DE933004 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -789,6 +810,7 @@
 				FCD42C841D7B21440067B380 /* BGQuestionDetailCell.m in Sources */,
 				FC1876AE1D7B48E400B620FD /* ZUIShareViewController.swift in Sources */,
 				37E211671D7A9B6F00B69F54 /* AppDelegate.m in Sources */,
+				37BD05D51D7BC8EF00D3D1AC /* LookCarViewController.m in Sources */,
 				FC82D3941D7AC9B900643C18 /* BGQuestionTableViewCell.m in Sources */,
 				37E211641D7A9B6F00B69F54 /* main.m in Sources */,
 				FC1876A51D7B48C200B620FD /* ZUITranslucenceLayerModalTransition.swift in Sources */,

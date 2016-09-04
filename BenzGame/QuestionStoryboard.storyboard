@@ -49,6 +49,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CYe-Uj-SQv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eoq-Dw-Vwu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSV-UP-WiB">
@@ -63,15 +64,15 @@
                                         <state key="normal" image="icon_back_normal"/>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Ul7-Od-5Sq"/>
                                                 <exclude reference="6MJ-sl-IAV"/>
+                                                <exclude reference="Ul7-Od-5Sq"/>
                                             </mask>
                                         </variation>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="89" y="53" width="62" height="22"/>
                                             <mask key="constraints">
-                                                <include reference="Ul7-Od-5Sq"/>
                                                 <include reference="6MJ-sl-IAV"/>
+                                                <include reference="Ul7-Od-5Sq"/>
                                             </mask>
                                         </variation>
                                         <connections>
@@ -137,6 +138,7 @@
                                 <exclude reference="2lw-lO-03F"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="B8g-Ub-CiA"/>
                                 <exclude reference="F4Z-ej-qhz"/>
                                 <exclude reference="KDW-26-fY7"/>
                                 <exclude reference="Klb-FH-xov"/>
@@ -145,7 +147,6 @@
                                 <exclude reference="FK8-1M-yUp"/>
                                 <exclude reference="pC3-HZ-Nfg"/>
                                 <exclude reference="rYu-OL-Bhw"/>
-                                <exclude reference="B8g-Ub-CiA"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -154,6 +155,7 @@
                                 <include reference="2lw-lO-03F"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="B8g-Ub-CiA"/>
                                 <include reference="F4Z-ej-qhz"/>
                                 <exclude reference="KDW-26-fY7"/>
                                 <exclude reference="Klb-FH-xov"/>
@@ -162,7 +164,6 @@
                                 <include reference="FK8-1M-yUp"/>
                                 <include reference="pC3-HZ-Nfg"/>
                                 <include reference="rYu-OL-Bhw"/>
-                                <include reference="B8g-Ub-CiA"/>
                             </mask>
                         </variation>
                     </view>

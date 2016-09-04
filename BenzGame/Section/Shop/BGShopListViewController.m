@@ -101,7 +101,7 @@
 //    }];
 
     ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
-    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
+    [self.navigationController showViewController:shopDetailVC sender:nil];
 }
 - (void)configCell:(BGShopListCell *)cell indexPath:(NSIndexPath *)indexPath {
     
