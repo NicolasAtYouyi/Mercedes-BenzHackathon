@@ -10,6 +10,7 @@
 #import "BGConstant.h"
 #import "BGShopListCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "ShopDetailViewController.h"
 
 @interface BGShopListViewController ()<UITableViewDataSource, UITableViewDelegate, BGShopListCellDelegate>
 @property (weak, nonatomic) IBOutlet UIView *titleView;
@@ -88,6 +89,7 @@
     return cellHeight;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 //    BGShopListCell *detail = [[BGQuestionDetailViewController alloc] initWithNibName:@"BGQuestionDetailViewController" bundle:nil];
 //    detail.transitioningDelegate = self;
 //    detail.questionDic = self.questionsArr[indexPath.row];
@@ -97,6 +99,9 @@
 //    [self.parentViewController presentViewController:detail animated:true completion:^{
 //        [tableView deselectRowAtIndexPath:indexPath animated:NO];
 //    }];
+
+    ShopDetailViewController *shopDetailVC = [[ShopDetailViewController alloc] init];
+    [self.navigationController showDetailViewController:shopDetailVC sender:nil];
 }
 - (void)configCell:(BGShopListCell *)cell indexPath:(NSIndexPath *)indexPath {
     
