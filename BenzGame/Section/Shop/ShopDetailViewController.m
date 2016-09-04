@@ -139,8 +139,8 @@
 
 - (void)attation {
     NSLog(@"预约");
-    LookCarViewController *lookCarVC = [[LookCarViewController alloc] init];
-    [self.navigationController showViewController:lookCarVC sender:nil];
+//    LookCarViewController *lookCarVC = [[LookCarViewController alloc] init];
+//    [self.navigationController showViewController:lookCarVC sender:nil];
 }
 
 - (void)payAction {
