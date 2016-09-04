@@ -8,4 +8,7 @@
 
 
 #import "BGConstant.h"
+#import "DTCoreText.h"
+#import "SDWebImageManager.h"
+#import "UIImageView+WebCache.h"
 

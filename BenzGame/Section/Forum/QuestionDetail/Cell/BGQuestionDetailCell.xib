@@ -34,12 +34,12 @@
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeN-DF-9R9">
-                        <rect key="frame" x="262" y="151.5" width="54" height="44"/>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yeN-DF-9R9">
+                        <rect key="frame" x="282" y="162.5" width="14" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="44" id="RdN-1S-cz0"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
+                        <state key="normal" image="qa_reply"/>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-1t-P4h">
                         <rect key="frame" x="231" y="162.5" width="13" height="22"/>
@@ -96,6 +96,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="qa_reply" width="14" height="14"/>
         <image name="up" width="13" height="14"/>
     </resources>
 </document>

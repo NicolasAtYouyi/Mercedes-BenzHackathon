@@ -43,6 +43,7 @@
 		FC4BD5521D7B817D00B608A6 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD54B1D7B817D00B608A6 /* 6.jpg */; };
 		FC4BD5531D7B817D00B608A6 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD54C1D7B817D00B608A6 /* 7.jpg */; };
 		FC4BD5551D7B855400B608A6 /* Questions.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4BD5541D7B855400B608A6 /* Questions.plist */; };
+		FC4BD55F1D7B9D8700B608A6 /* BGActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BD55D1D7B9D8700B608A6 /* BGActivityDetailViewController.swift */; };
 		FC82D37D1D7AC34500643C18 /* QuestionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */; };
 		FC82D3831D7AC60000643C18 /* BGTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3821D7AC60000643C18 /* BGTabViewController.m */; };
 		FC82D3881D7AC71000643C18 /* BGForumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC82D3861D7AC71000643C18 /* BGForumViewController.m */; };
@@ -143,6 +144,7 @@
 		FC4BD54B1D7B817D00B608A6 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		FC4BD54C1D7B817D00B608A6 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		FC4BD5541D7B855400B608A6 /* Questions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Questions.plist; sourceTree = "<group>"; };
+		FC4BD55D1D7B9D8700B608A6 /* BGActivityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGActivityDetailViewController.swift; sourceTree = "<group>"; };
 		FC82D37C1D7AC34500643C18 /* QuestionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = QuestionStoryboard.storyboard; sourceTree = "<group>"; };
 		FC82D3811D7AC60000643C18 /* BGTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGTabViewController.h; sourceTree = "<group>"; };
 		FC82D3821D7AC60000643C18 /* BGTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGTabViewController.m; sourceTree = "<group>"; };
@@ -422,9 +424,18 @@
 			path = photo;
 			sourceTree = "<group>";
 		};
+		FC4BD5571D7B9AB600B608A6 /* ActivityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FC4BD55D1D7B9D8700B608A6 /* BGActivityDetailViewController.swift */,
+			);
+			name = ActivityDetail;
+			sourceTree = "<group>";
+		};
 		FC82D37E1D7AC5AA00643C18 /* Section */ = {
 			isa = PBXGroup;
 			children = (
+				FC4BD5571D7B9AB600B608A6 /* ActivityDetail */,
 				FC4BD5401D7B80DA00B608A6 /* Mine */,
 				FC4BD52D1D7B80CE00B608A6 /* Home */,
 				FC1876AF1D7B4C5800B620FD /* Shop */,
@@ -771,6 +782,7 @@
 				37E1C49A1D7B8FBE009AE7EC /* ShopDetailViewController.m in Sources */,
 				FC82D57F1D7AD77900643C18 /* UITableView+FDTemplateLayoutCell.m in Sources */,
 				FC82D39E1D7AD11A00643C18 /* ZUISwipePageViewController.m in Sources */,
+				FC4BD55F1D7B9D8700B608A6 /* BGActivityDetailViewController.swift in Sources */,
 				37E2116A1D7A9B6F00B69F54 /* ViewController.m in Sources */,
 				FC82D39A1D7ACFD800643C18 /* UIColor+HexColor.m in Sources */,
 				FC82D38E1D7AC93500643C18 /* BGQuestionListViewController.m in Sources */,

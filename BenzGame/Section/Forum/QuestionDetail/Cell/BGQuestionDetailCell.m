@@ -26,6 +26,9 @@
     self.likeBtn.titleLabel.font = [UIFont fontWithName:kFontName size:kAnswerLikeFontFize];
     [self.likeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
+    self.commentBtn.titleLabel.font = [UIFont fontWithName:kFontName size:kAnswerLikeFontFize];
+    [self.commentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    
     self.avatarBtn.layer.cornerRadius = 15;
     self.avatarBtn.layer.masksToBounds = YES;
     self.avatarBtn.backgroundColor = [UIColor redColor];
