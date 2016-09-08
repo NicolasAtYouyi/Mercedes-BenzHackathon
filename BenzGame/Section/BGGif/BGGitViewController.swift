@@ -17,7 +17,7 @@ class BGGitViewController: UIViewController {
         view.backgroundColor = UIColor.clearColor()
         
         webView.scalesPageToFit = true
-        webView.backgroundColor = UIColor.clearColor()
+        webView.backgroundColor = UIColor.blackColor()
         webView.userInteractionEnabled = false
         
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(self.onBkgTap))
